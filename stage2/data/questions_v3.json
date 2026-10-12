@@ -1,0 +1,339 @@
+[
+  {
+    "type": "1-hop",
+    "q": "Who leads the Search team?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Kofi Mensah work from?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [
+      "Berlin",
+      "Toronto"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Which technologies does Orion use?",
+    "expect": [
+      "Elasticsearch",
+      "Kafka"
+    ],
+    "forbid": [
+      "Postgres",
+      "PyTorch",
+      "Kubernetes"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "What is Frank Osei's role on Ledger?",
+    "expect": [
+      "data engineer"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "1-hop",
+    "q": "Which team is Omar Haddad on?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Platform"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that owns Lens?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people work on projects owned by the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who works on a project that Atlas depends on?",
+    "expect": [
+      "Alex Moore",
+      "Frank Osei",
+      "Grace Liu",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Jack Wilson",
+      "Eve Park"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which other projects use a technology that Ledger uses?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [
+      "Orion",
+      "Lens",
+      "Beacon",
+      "Forge"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who is the manager of Lena Fischer's manager?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Dave Lee"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people in the Berlin office work on Atlas?",
+    "expect": [
+      "Bob Kumar",
+      "Carol Diaz",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Grace Liu"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which teams have members working on Atlas?",
+    "expect": [
+      "Payments",
+      "Platform"
+    ],
+    "forbid": [
+      "Search"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Alice Chen?",
+    "expect": [
+      "6|six"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "aggregation",
+    "q": "Which project has the most people working on it?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "aggregation",
+    "q": "How many projects use Kafka?",
+    "expect": [
+      "4|four"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "aggregation",
+    "q": "Which office has the fewest people?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "aggregation",
+    "q": "Which teams own more than one project that uses Kafka?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Payments",
+      "Platform"
+    ]
+  },
+  {
+    "type": "not-found",
+    "q": "Who works on Project Zeus?",
+    "expect": [],
+    "forbid": []
+  },
+  {
+    "type": "not-found",
+    "q": "What is Dave Lee's salary?",
+    "expect": [],
+    "forbid": []
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Alex Moore work from?",
+    "expect": [
+      "Berlin"
+    ],
+    "forbid": [
+      "Toronto"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Who does Jane Wilson report to?",
+    "expect": [
+      "Priya Nair"
+    ],
+    "forbid": [
+      "Dave Lee",
+      "Alice Chen"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that Alex Kim belongs to?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which project uses MongoDB Atlas, and which team owns that project?",
+    "expect": [
+      "Ledger",
+      "Payments"
+    ],
+    "forbid": [
+      "Search",
+      "Platform"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Dave Lee?",
+    "expect": [
+      "5|five"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people work on Lens?",
+    "expect": [
+      "3|three"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "1-hop",
+    "q": "Who is the CTO?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Priya Nair",
+      "Alice Chen"
+    ]
+  },
+  {
+    "type": "temporal",
+    "q": "Which team was Omar Haddad on before his current team?",
+    "expect": [
+      "Platform"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "temporal",
+    "q": "Who is currently a member of the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Wei Chen"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ]
+  },
+  {
+    "type": "temporal",
+    "q": "Since what year has Alice Chen led the Payments team?",
+    "expect": [
+      "2021"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "descriptive",
+    "q": "What does Atlas do?",
+    "expect": [
+      "checkout"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "descriptive",
+    "q": "What was the impact of the Kafka outage on 2025-06-12?",
+    "expect": [
+      "Atlas",
+      "Orion",
+      "Lens",
+      "Beacon"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "descriptive",
+    "q": "How many days of paid leave do employees get per year?",
+    "expect": [
+      "25|twenty-five"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "descriptive",
+    "q": "Why does Atlas depend on Beacon?",
+    "expect": [
+      "alerting"
+    ],
+    "forbid": []
+  },
+  {
+    "type": "descriptive",
+    "q": "What is Lens used for?",
+    "expect": [
+      "recommendation|recommendations"
+    ],
+    "forbid": []
+  }
+]

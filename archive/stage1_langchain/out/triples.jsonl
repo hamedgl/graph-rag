@@ -1,0 +1,89 @@
+{"subject": "Alice Chen", "subject_type": "Person", "relation": "LEADS", "object": "Payments", "object_type": "Team", "source": "01_org_update_payments.md"}
+{"subject": "Alice Chen", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Maria Santos", "object_type": "Person", "source": "01_org_update_payments.md"}
+{"subject": "Bob Kumar", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Payments", "object_type": "Team", "source": "01_org_update_payments.md"}
+{"subject": "Carol Diaz", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Payments", "object_type": "Team", "source": "01_org_update_payments.md"}
+{"subject": "Frank Osei", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Payments", "object_type": "Team", "source": "01_org_update_payments.md"}
+{"subject": "Grace Liu", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Payments", "object_type": "Team", "source": "01_org_update_payments.md"}
+{"subject": "Bob Kumar", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Alice Chen", "object_type": "Person", "source": "01_org_update_payments.md"}
+{"subject": "Carol Diaz", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Alice Chen", "object_type": "Person", "source": "01_org_update_payments.md"}
+{"subject": "Frank Osei", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Alice Chen", "object_type": "Person", "source": "01_org_update_payments.md"}
+{"subject": "Grace Liu", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Alice Chen", "object_type": "Person", "source": "01_org_update_payments.md"}
+{"subject": "Dave Lee", "subject_type": "Person", "relation": "LEADS", "object": "Search", "object_type": "Team", "source": "02_search_team_page.md"}
+{"subject": "Dave Lee", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Maria Santos", "object_type": "Person", "source": "02_search_team_page.md"}
+{"subject": "Eve Park", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Search", "object_type": "Team", "source": "02_search_team_page.md"}
+{"subject": "Hiro Tanaka", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Search", "object_type": "Team", "source": "02_search_team_page.md"}
+{"subject": "Ines Moreau", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Search", "object_type": "Team", "source": "02_search_team_page.md"}
+{"subject": "Eve Park", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Dave Lee", "object_type": "Person", "source": "02_search_team_page.md"}
+{"subject": "Hiro Tanaka", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Dave Lee", "object_type": "Person", "source": "02_search_team_page.md"}
+{"subject": "Ines Moreau", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Dave Lee", "object_type": "Person", "source": "02_search_team_page.md"}
+{"subject": "Omar Haddad", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Search", "object_type": "Team", "source": "03_transfer_omar.md"}
+{"subject": "Omar Haddad", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Dave Lee", "object_type": "Person", "source": "03_transfer_omar.md"}
+{"subject": "Omar Haddad", "subject_type": "Person", "relation": "WORKS_ON", "object": "Orion", "object_type": "Project", "source": "03_transfer_omar.md"}
+{"subject": "Priya Nair", "subject_type": "Person", "relation": "LEADS", "object": "Platform", "object_type": "Team", "source": "04_platform_team.md"}
+{"subject": "Priya Nair", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Maria Santos", "object_type": "Person", "source": "04_platform_team.md"}
+{"subject": "Jack Wilson", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Platform", "object_type": "Team", "source": "04_platform_team.md"}
+{"subject": "Jack Wilson", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Priya Nair", "object_type": "Person", "source": "04_platform_team.md"}
+{"subject": "Kofi Mensah", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Platform", "object_type": "Team", "source": "04_platform_team.md"}
+{"subject": "Kofi Mensah", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Priya Nair", "object_type": "Person", "source": "04_platform_team.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Platform", "object_type": "Team", "source": "04_platform_team.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Priya Nair", "object_type": "Person", "source": "04_platform_team.md"}
+{"subject": "Payments", "subject_type": "Team", "relation": "OWNS", "object": "Atlas", "object_type": "Project", "source": "05_atlas_readme.md"}
+{"subject": "Atlas", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "05_atlas_readme.md"}
+{"subject": "Atlas", "subject_type": "Project", "relation": "USES", "object": "Postgres", "object_type": "Tech", "source": "05_atlas_readme.md"}
+{"subject": "Atlas", "subject_type": "Project", "relation": "DEPENDS_ON", "object": "Ledger", "object_type": "Project", "source": "05_atlas_readme.md"}
+{"subject": "Atlas", "subject_type": "Project", "relation": "DEPENDS_ON", "object": "Beacon", "object_type": "Project", "source": "05_atlas_readme.md"}
+{"subject": "Bob Kumar", "subject_type": "Person", "relation": "WORKS_ON", "object": "Atlas", "object_type": "Project", "source": "05_atlas_readme.md"}
+{"subject": "Carol Diaz", "subject_type": "Person", "relation": "WORKS_ON", "object": "Atlas", "object_type": "Project", "source": "05_atlas_readme.md"}
+{"subject": "Grace Liu", "subject_type": "Person", "relation": "WORKS_ON", "object": "Atlas", "object_type": "Project", "source": "05_atlas_readme.md"}
+{"subject": "Payments", "subject_type": "Team", "relation": "OWNS", "object": "Ledger", "object_type": "Project", "source": "06_ledger_readme.md"}
+{"subject": "Ledger", "subject_type": "Project", "relation": "USES", "object": "Postgres", "object_type": "Tech", "source": "06_ledger_readme.md"}
+{"subject": "Ledger", "subject_type": "Project", "relation": "DEPENDS_ON", "object": "Forge", "object_type": "Project", "source": "06_ledger_readme.md"}
+{"subject": "Frank Osei", "subject_type": "Person", "relation": "WORKS_ON", "object": "Ledger", "object_type": "Project", "source": "06_ledger_readme.md"}
+{"subject": "Grace Liu", "subject_type": "Person", "relation": "WORKS_ON", "object": "Ledger", "object_type": "Project", "source": "06_ledger_readme.md"}
+{"subject": "Search", "subject_type": "Team", "relation": "OWNS", "object": "Orion", "object_type": "Project", "source": "07_orion_readme.md"}
+{"subject": "Orion", "subject_type": "Project", "relation": "USES", "object": "Elasticsearch", "object_type": "Tech", "source": "07_orion_readme.md"}
+{"subject": "Orion", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "07_orion_readme.md"}
+{"subject": "Orion", "subject_type": "Project", "relation": "DEPENDS_ON", "object": "Beacon", "object_type": "Project", "source": "07_orion_readme.md"}
+{"subject": "Search", "subject_type": "Team", "relation": "OWNS", "object": "Lens", "object_type": "Project", "source": "08_lens_readme.md"}
+{"subject": "Lens", "subject_type": "Project", "relation": "USES", "object": "PyTorch", "object_type": "Tech", "source": "08_lens_readme.md"}
+{"subject": "Lens", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "08_lens_readme.md"}
+{"subject": "Lens", "subject_type": "Project", "relation": "DEPENDS_ON", "object": "Orion", "object_type": "Project", "source": "08_lens_readme.md"}
+{"subject": "Hiro Tanaka", "subject_type": "Person", "relation": "WORKS_ON", "object": "Lens", "object_type": "Project", "source": "08_lens_readme.md"}
+{"subject": "Ines Moreau", "subject_type": "Person", "relation": "WORKS_ON", "object": "Lens", "object_type": "Project", "source": "08_lens_readme.md"}
+{"subject": "Platform", "subject_type": "Team", "relation": "OWNS", "object": "Forge", "object_type": "Project", "source": "09_forge_readme.md"}
+{"subject": "Forge", "subject_type": "Project", "relation": "USES", "object": "Kubernetes", "object_type": "Tech", "source": "09_forge_readme.md"}
+{"subject": "Jack Wilson", "subject_type": "Person", "relation": "WORKS_ON", "object": "Forge", "object_type": "Project", "source": "09_forge_readme.md"}
+{"subject": "Platform", "subject_type": "Team", "relation": "OWNS", "object": "Beacon", "object_type": "Project", "source": "10_beacon_readme.md"}
+{"subject": "Beacon", "subject_type": "Project", "relation": "USES", "object": "Kubernetes", "object_type": "Tech", "source": "10_beacon_readme.md"}
+{"subject": "Beacon", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "10_beacon_readme.md"}
+{"subject": "Kofi Mensah", "subject_type": "Person", "relation": "WORKS_ON", "object": "Beacon", "object_type": "Project", "source": "10_beacon_readme.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "WORKS_ON", "object": "Beacon", "object_type": "Project", "source": "10_beacon_readme.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "WORKS_ON", "object": "Atlas", "object_type": "Project", "source": "11_meeting_atlas_reliability.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "MEMBER_OF", "object": "Platform", "object_type": "Team", "source": "11_meeting_atlas_reliability.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Priya Nair", "object_type": "Person", "source": "11_meeting_atlas_reliability.md"}
+{"subject": "Carol Diaz", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "12_onboarding_carol.md"}
+{"subject": "Carol Diaz", "subject_type": "Person", "relation": "REPORTS_TO", "object": "Alice Chen", "object_type": "Person", "source": "12_onboarding_carol.md"}
+{"subject": "Alice Chen", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "12_onboarding_carol.md"}
+{"subject": "Bob Kumar", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "13_office_berlin.md"}
+{"subject": "Carol Diaz", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "13_office_berlin.md"}
+{"subject": "Dave Lee", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "13_office_berlin.md"}
+{"subject": "Eve Park", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "13_office_berlin.md"}
+{"subject": "Omar Haddad", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "13_office_berlin.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "13_office_berlin.md"}
+{"subject": "Alice Chen", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "14_office_toronto.md"}
+{"subject": "Frank Osei", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "14_office_toronto.md"}
+{"subject": "Hiro Tanaka", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "14_office_toronto.md"}
+{"subject": "Priya Nair", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "14_office_toronto.md"}
+{"subject": "Jack Wilson", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "14_office_toronto.md"}
+{"subject": "Maria Santos", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Toronto", "object_type": "Office", "source": "14_office_toronto.md"}
+{"subject": "Grace Liu", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Lisbon", "object_type": "Office", "source": "15_office_lisbon.md"}
+{"subject": "Ines Moreau", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Lisbon", "object_type": "Office", "source": "15_office_lisbon.md"}
+{"subject": "Kofi Mensah", "subject_type": "Person", "relation": "LOCATED_IN", "object": "Lisbon", "object_type": "Office", "source": "15_office_lisbon.md"}
+{"subject": "Atlas", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "16_incident_kafka.md"}
+{"subject": "Orion", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "16_incident_kafka.md"}
+{"subject": "Lens", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "16_incident_kafka.md"}
+{"subject": "Beacon", "subject_type": "Project", "relation": "USES", "object": "Kafka", "object_type": "Tech", "source": "16_incident_kafka.md"}
+{"subject": "Ledger", "subject_type": "Project", "relation": "USES", "object": "Postgres", "object_type": "Tech", "source": "16_incident_kafka.md"}
+{"subject": "Maria Santos", "subject_type": "Person", "relation": "LEADS", "object": "Payments", "object_type": "Team", "source": "17_cto_all_hands.md"}
+{"subject": "Maria Santos", "subject_type": "Person", "relation": "LEADS", "object": "Search", "object_type": "Team", "source": "17_cto_all_hands.md"}
+{"subject": "Maria Santos", "subject_type": "Person", "relation": "LEADS", "object": "Platform", "object_type": "Team", "source": "17_cto_all_hands.md"}

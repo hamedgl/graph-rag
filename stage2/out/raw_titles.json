@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Maria Santos",
+    "job_title": "CTO",
+    "source": "01_org_update_payments.md"
+  },
+  {
+    "name": "Maria Santos",
+    "job_title": "CTO",
+    "source": "02_search_team_page.md"
+  },
+  {
+    "name": "the CTO",
+    "job_title": "CTO",
+    "source": "04_platform_team.md"
+  },
+  {
+    "name": "Jack Wilson",
+    "job_title": "devops engineer",
+    "source": "09_forge_readme.md"
+  },
+  {
+    "name": "Kofi Mensah",
+    "job_title": "SRE",
+    "source": "10_beacon_readme.md"
+  },
+  {
+    "name": "Lena Fischer",
+    "job_title": "backend engineer",
+    "source": "10_beacon_readme.md"
+  },
+  {
+    "name": "Maria Santos",
+    "job_title": "CTO",
+    "source": "17_cto_all_hands.md"
+  },
+  {
+    "name": "Alex Kim",
+    "job_title": "ML engineer",
+    "source": "21_new_hires.md"
+  },
+  {
+    "job_title": "search engineer",
+    "name": "W. Chen",
+    "source": "25_orion_quality.md"
+  }
+]

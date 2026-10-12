@@ -1,0 +1,5 @@
+.env
+.venv/
+stage1/out/
+__pycache__/
+stage2/lightrag_store/

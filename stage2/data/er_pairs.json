@@ -1,0 +1,112 @@
+{
+  "must_merge": [
+    [
+      "Priya Nair",
+      "Dr. Nair"
+    ],
+    [
+      "Priya Nair",
+      "Priya"
+    ],
+    [
+      "Alice Chen",
+      "A. Chen"
+    ],
+    [
+      "Alice Chen",
+      "Alise Chen"
+    ],
+    [
+      "Carol Diaz",
+      "Carol Diz"
+    ],
+    [
+      "Hiro Tanaka",
+      "Hiro T."
+    ],
+    [
+      "Alex Moore",
+      "A. Moore"
+    ],
+    [
+      "Wei Chen",
+      "W. Chen"
+    ],
+    [
+      "Postgres",
+      "PostgreSQL"
+    ],
+    [
+      "Postgres",
+      "PG"
+    ],
+    [
+      "Kubernetes",
+      "K8s"
+    ],
+    [
+      "Payments",
+      "Payments Squad"
+    ],
+    [
+      "Maria Santos",
+      "CTO"
+    ]
+  ],
+  "must_not_merge": [
+    [
+      "Alex Kim",
+      "Alex Moore"
+    ],
+    [
+      "Jack Wilson",
+      "Jane Wilson"
+    ],
+    [
+      "Alice Chen",
+      "Wei Chen"
+    ],
+    [
+      "Atlas",
+      "MongoDB Atlas"
+    ],
+    [
+      "A. Chen",
+      "W. Chen"
+    ],
+    [
+      "Search",
+      "Elasticsearch"
+    ]
+  ],
+  "extra_aliases": {
+    "Payments": [
+      "Payments Team",
+      "payments squad",
+      "the payments squad"
+    ],
+    "Search": [
+      "Search Team",
+      "search folks",
+      "the search folks"
+    ],
+    "Platform": [
+      "Platform Team"
+    ],
+    "Berlin": [
+      "Berlin office"
+    ],
+    "Toronto": [
+      "Toronto office"
+    ],
+    "Lisbon": [
+      "Lisbon hub"
+    ],
+    "Maria Santos": [
+      "the CTO"
+    ],
+    "Hiro Tanaka": [
+      "Hiro"
+    ]
+  }
+}

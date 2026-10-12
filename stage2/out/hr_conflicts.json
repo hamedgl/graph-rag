@@ -1,0 +1,29 @@
+[
+  {
+    "person": "Grace Liu",
+    "field": "LOCATED_IN",
+    "hr": "Toronto",
+    "docs": [
+      "Lisbon"
+    ],
+    "winner": "HR"
+  },
+  {
+    "person": "Wei Chen",
+    "field": "MEMBER_OF",
+    "hr": "Search",
+    "docs": [
+      "Platform"
+    ],
+    "winner": "documents (newer)"
+  },
+  {
+    "person": "Wei Chen",
+    "field": "REPORTS_TO",
+    "hr": "Dave Lee",
+    "docs": [
+      "Priya Nair"
+    ],
+    "winner": "documents (newer)"
+  }
+]

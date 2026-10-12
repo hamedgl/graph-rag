@@ -1,0 +1,12 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    ports:
+      - "127.0.0.1:7474:7474"   # browser UI
+      - "127.0.0.1:7687:7687"   # bolt (driver)
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD}   # read from .env
+    volumes:
+      - neo4j-data:/data
+volumes:
+  neo4j-data:

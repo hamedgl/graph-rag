@@ -1,0 +1,2960 @@
+[
+  {
+    "type": "1-hop",
+    "q": "Who leads the Search team?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team.",
+    "citations": [
+      "02_search_team.md"
+    ],
+    "known": true,
+    "invented_citations": [
+      "02_search_team.md"
+    ],
+    "retrieval": "top-3: 02_search_team_page.md (0.87), 25_orion_quality.md (0.77), 03_transfer_omar.md (0.76)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who leads the Search team?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team.",
+    "citations": [
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Search'], 39 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who leads the Search team?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team.",
+    "citations": [
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who leads the Search team?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team.",
+    "citations": [
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Kofi Mensah work from?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [
+      "Berlin",
+      "Toronto"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "The context does not specify which office Kofi Mensah works from.",
+    "citations": [
+      "04_platform_team.md",
+      "13_office_berlin.md",
+      "14_office_toronto.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "top-3: 04_platform_team.md (0.70), 13_office_berlin.md (0.70), 14_office_toronto.md (0.69)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Kofi Mensah work from?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [
+      "Berlin",
+      "Toronto"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Kofi Mensah works from the Lisbon office.",
+    "citations": [
+      "15_office_lisbon.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Kofi Mensah'], 26 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Kofi Mensah work from?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [
+      "Berlin",
+      "Toronto"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Kofi Mensah works from the Lisbon office.",
+    "citations": [
+      "15_office_lisbon.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Kofi Mensah work from?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [
+      "Berlin",
+      "Toronto"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Kofi Mensah works from the Lisbon office.",
+    "citations": [
+      "15_office_lisbon.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Which technologies does Orion use?",
+    "expect": [
+      "Elasticsearch",
+      "Kafka"
+    ],
+    "forbid": [
+      "Postgres",
+      "PyTorch",
+      "Kubernetes"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "Orion uses Elasticsearch for indexing and Kafka to ingest events. [07_orion_readme.md]",
+    "citations": [
+      "07_orion_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 07_orion_readme.md (0.79), 25_orion_quality.md (0.75), 20_tech_radar.md (0.73)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which technologies does Orion use?",
+    "expect": [
+      "Elasticsearch",
+      "Kafka"
+    ],
+    "forbid": [
+      "Postgres",
+      "PyTorch",
+      "Kubernetes"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Orion uses Elasticsearch and Kafka.",
+    "citations": [
+      "07_orion_readme.md",
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Orion'], 38 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which technologies does Orion use?",
+    "expect": [
+      "Elasticsearch",
+      "Kafka"
+    ],
+    "forbid": [
+      "Postgres",
+      "PyTorch",
+      "Kubernetes"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Orion uses Kafka and Elasticsearch.",
+    "citations": [
+      "07_orion_readme.md",
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which technologies does Orion use?",
+    "expect": [
+      "Elasticsearch",
+      "Kafka"
+    ],
+    "forbid": [
+      "Postgres",
+      "PyTorch",
+      "Kubernetes"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Orion uses Kafka and Elasticsearch.",
+    "citations": [
+      "07_orion_readme.md",
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "What is Frank Osei's role on Ledger?",
+    "expect": [
+      "data engineer"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Frank Osei has been Ledger\u2019s data engineer since 2023.",
+    "citations": [
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 06_ledger_readme.md (0.74), 23_ledger_update.md (0.71), 27_tech_notes.md (0.68)"
+  },
+  {
+    "type": "1-hop",
+    "q": "What is Frank Osei's role on Ledger?",
+    "expect": [
+      "data engineer"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Frank Osei is a data engineer on Ledger.",
+    "citations": [
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Frank Osei', 'Ledger'], 45 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "What is Frank Osei's role on Ledger?",
+    "expect": [
+      "data engineer"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Frank Osei is a data engineer on Ledger.",
+    "citations": [
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "What is Frank Osei's role on Ledger?",
+    "expect": [
+      "data engineer"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Frank Osei's role on Ledger is data engineer.",
+    "citations": [
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Which team is Omar Haddad on?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Platform"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "Omar Haddad is on the Search team.",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 03_transfer_omar.md (0.73), 02_search_team_page.md (0.68), 13_office_berlin.md (0.67)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which team is Omar Haddad on?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Platform"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Omar Haddad is on the Search team (since 2024).",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Omar Haddad'], 40 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which team is Omar Haddad on?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Platform"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Omar Haddad is on the Search team.",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which team is Omar Haddad on?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Platform"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Omar Haddad is on the Search team.",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that owns Lens?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team, which owns Lens.",
+    "citations": [
+      "08_lens_readme.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 22_lens_update.md (0.73), 08_lens_readme.md (0.73), 02_search_team_page.md (0.69)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that owns Lens?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Dave Lee leads Search, the team that owns Lens.",
+    "citations": [
+      "02_search_team_page.md",
+      "08_lens_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Lens'], 30 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that owns Lens?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team, which owns Lens.",
+    "citations": [
+      "08_lens_readme.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that owns Lens?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Priya Nair"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team, which owns Lens.",
+    "citations": [
+      "08_lens_readme.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people work on projects owned by the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "Kofi Mensah and Lena Fischer work on Beacon, and Jack Wilson maintains Forge; both projects are owned by the Platform team.",
+    "citations": [
+      "10_beacon_readme.md",
+      "09_forge_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 04_platform_team.md (0.81), 10_beacon_readme.md (0.76), 09_forge_readme.md (0.74)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people work on projects owned by the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Jack Wilson and Jane Wilson work on Forge, which Platform owns. Kofi Mensah and Lena Fischer work on Beacon, which Platform owns.",
+    "citations": [
+      "09_forge_readme.md",
+      "24_forge_oncall.md",
+      "10_beacon_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Platform'], 39 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people work on projects owned by the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Jack Wilson and Jane Wilson work on Forge, and Kofi Mensah and Lena Fischer work on Beacon; both projects are owned by the Platform team.",
+    "citations": [
+      "09_forge_readme.md",
+      "24_forge_oncall.md",
+      "10_beacon_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people work on projects owned by the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Jack Wilson and Jane Wilson work on Forge, and Kofi Mensah and Lena Fischer work on Beacon. Both projects are owned by the Platform team.",
+    "citations": [
+      "09_forge_readme.md",
+      "24_forge_oncall.md",
+      "10_beacon_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who works on a project that Atlas depends on?",
+    "expect": [
+      "Alex Moore",
+      "Frank Osei",
+      "Grace Liu",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Jack Wilson",
+      "Eve Park"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "The context doesn\u2019t identify anyone who works on Ledger or Beacon, the projects Atlas depends on.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "top-3: 26_standup_notes.md (0.76), 05_atlas_readme.md (0.74), 11_meeting_atlas_reliability.md (0.73)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who works on a project that Atlas depends on?",
+    "expect": [
+      "Alex Moore",
+      "Frank Osei",
+      "Grace Liu",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Jack Wilson",
+      "Eve Park"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Atlas depends on Beacon and Ledger. Kofi Mensah and Lena Fischer work on Beacon; Alex Moore, Frank Osei, and Grace Liu work on Ledger. [05_atlas_readme.md, 10_beacon_readme.md, 06_ledger_readme.md, 23_ledger_update.md]",
+    "citations": [
+      "05_atlas_readme.md",
+      "10_beacon_readme.md",
+      "06_ledger_readme.md",
+      "23_ledger_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Atlas'], 41 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who works on a project that Atlas depends on?",
+    "expect": [
+      "Alex Moore",
+      "Frank Osei",
+      "Grace Liu",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Jack Wilson",
+      "Eve Park"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Lena Fischer and Kofi Mensah work on Beacon; Alex Moore, Grace Liu, and Frank Osei work on Ledger. Atlas\u2019s dependencies are sourced from 05_atlas_readme.md; the work assignments are sourced from 10_beacon_readme.md, 23_ledger_update.md, and 06_ledger_readme.md.",
+    "citations": [
+      "05_atlas_readme.md",
+      "10_beacon_readme.md",
+      "23_ledger_update.md",
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who works on a project that Atlas depends on?",
+    "expect": [
+      "Alex Moore",
+      "Frank Osei",
+      "Grace Liu",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Jack Wilson",
+      "Eve Park"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Alex Moore, Frank Osei, and Grace Liu work on Ledger; Kofi Mensah and Lena Fischer work on Beacon. Atlas depends on both projects.",
+    "citations": [
+      "05_atlas_readme.md",
+      "23_ledger_update.md",
+      "06_ledger_readme.md",
+      "10_beacon_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which other projects use a technology that Ledger uses?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [
+      "Orion",
+      "Lens",
+      "Beacon",
+      "Forge"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "Atlas also uses Postgres: Ledger\u2019s storage is listed as PG, and Atlas talks to Postgres. [06_ledger_readme.md] [27_tech_notes.md]",
+    "citations": [
+      "06_ledger_readme.md",
+      "27_tech_notes.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 27_tech_notes.md (0.79), 06_ledger_readme.md (0.78), 23_ledger_update.md (0.78)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which other projects use a technology that Ledger uses?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [
+      "Orion",
+      "Lens",
+      "Beacon",
+      "Forge"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Ledger uses MongoDB Atlas and Postgres. Atlas also uses Postgres, so Atlas is the other project known to use a technology Ledger uses. [23_ledger_update.md, 27_tech_notes.md, 05_atlas_readme.md, 06_ledger_readme.md]",
+    "citations": [
+      "23_ledger_update.md",
+      "27_tech_notes.md",
+      "05_atlas_readme.md",
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Ledger'], 34 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which other projects use a technology that Ledger uses?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [
+      "Orion",
+      "Lens",
+      "Beacon",
+      "Forge"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Atlas uses Postgres, a technology Ledger also uses, according to the project usage records. \ue200cite\ue20206_ledger_readme.md\ue20205_atlas_readme.md\ue201",
+    "citations": [
+      "06_ledger_readme.md",
+      "05_atlas_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which other projects use a technology that Ledger uses?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [
+      "Orion",
+      "Lens",
+      "Beacon",
+      "Forge"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Atlas uses Postgres, which is also used by Ledger.",
+    "citations": [
+      "05_atlas_readme.md",
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who is the manager of Lena Fischer's manager?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Dave Lee"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "The context does not say who manages Lena Fischer, so I can\u2019t determine her manager\u2019s manager.",
+    "citations": [
+      "13_office_berlin.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "top-3: 13_office_berlin.md (0.72), 02_search_team_page.md (0.69), 22_lens_update.md (0.68)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who is the manager of Lena Fischer's manager?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Dave Lee"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Lena Fischer reports to Priya Nair, who reports to Maria Santos. Therefore, the manager of Lena\u2019s manager is Maria Santos.",
+    "citations": [
+      "04_platform_team.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Lena Fischer'], 38 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who is the manager of Lena Fischer's manager?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Dave Lee"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Maria Santos.",
+    "citations": [
+      "04_platform_team.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who is the manager of Lena Fischer's manager?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Alice Chen",
+      "Dave Lee"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "The manager of Lena Fischer\u2019s manager is Maria Santos.",
+    "citations": [
+      "04_platform_team.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people in the Berlin office work on Atlas?",
+    "expect": [
+      "Bob Kumar",
+      "Carol Diaz",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Grace Liu"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "Carol Diaz works on Atlas. The notes mention \u201cCarol Diz,\u201d but the Berlin directory lists Carol Diaz, so the match is likely; the sources don\u2019t otherwise confirm it\u2019s the same person.",
+    "citations": [
+      "13_office_berlin.md",
+      "26_standup_notes.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 13_office_berlin.md (0.81), 26_standup_notes.md (0.77), 11_meeting_atlas_reliability.md (0.75)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people in the Berlin office work on Atlas?",
+    "expect": [
+      "Bob Kumar",
+      "Carol Diaz",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Grace Liu"
+    ],
+    "system": "traverse",
+    "correct": false,
+    "answer": "Bob Kumar, Carol Diaz, and Lena Fischer work on Atlas and are located in Berlin. Grace Liu also works on Atlas, but the context places her in Lisbon.",
+    "citations": [
+      "05_atlas_readme.md",
+      "26_standup_notes.md",
+      "11_meeting_atlas_reliability.md",
+      "13_office_berlin.md",
+      "15_office_lisbon.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Atlas', 'Berlin'], 64 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people in the Berlin office work on Atlas?",
+    "expect": [
+      "Bob Kumar",
+      "Carol Diaz",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Grace Liu"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Bob Kumar, Carol Diaz, and Lena Fischer.",
+    "citations": [
+      "05_atlas_readme.md",
+      "26_standup_notes.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which people in the Berlin office work on Atlas?",
+    "expect": [
+      "Bob Kumar",
+      "Carol Diaz",
+      "Lena Fischer"
+    ],
+    "forbid": [
+      "Grace Liu"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Carol Diaz, Bob Kumar, and Lena Fischer.",
+    "citations": [
+      "12_onboarding_carol.md",
+      "13_office_berlin.md",
+      "05_atlas_readme.md",
+      "26_standup_notes.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which teams have members working on Atlas?",
+    "expect": [
+      "Payments",
+      "Platform"
+    ],
+    "forbid": [
+      "Search"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "The Payments squad owns Atlas. Lena Fischer is on the Platform team and is joining Atlas as an SRE, so the teams represented are Payments and Platform.",
+    "citations": [
+      "05_atlas_readme.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 26_standup_notes.md (0.79), 11_meeting_atlas_reliability.md (0.76), 05_atlas_readme.md (0.75)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which teams have members working on Atlas?",
+    "expect": [
+      "Payments",
+      "Platform"
+    ],
+    "forbid": [
+      "Search"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Payments and Platform have members working on Atlas: Payments members Bob Kumar, Carol Diaz, and Grace Liu work on Atlas; Platform member Lena Fischer works on Atlas. [05_atlas_readme.md, 11_meeting_atlas_reliability.md]",
+    "citations": [
+      "05_atlas_readme.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Atlas'], 41 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which teams have members working on Atlas?",
+    "expect": [
+      "Payments",
+      "Platform"
+    ],
+    "forbid": [
+      "Search"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Payments and Platform have members working on Atlas.",
+    "citations": [
+      "01_org_update_payments.md",
+      "04_platform_team.md",
+      "05_atlas_readme.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which teams have members working on Atlas?",
+    "expect": [
+      "Payments",
+      "Platform"
+    ],
+    "forbid": [
+      "Search"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Payments and Platform.",
+    "citations": [],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Alice Chen?",
+    "expect": [
+      "6|six"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": false,
+    "answer": "Four people report directly to Alice Chen: Bob Kumar, Carol Diaz, Frank Osei, and Grace Liu.",
+    "citations": [
+      "01_org_update_payments.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 25_orion_quality.md (0.73), 02_search_team_page.md (0.73), 01_org_update_payments.md (0.73)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Alice Chen?",
+    "expect": [
+      "6|six"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "Four people report directly to Alice Chen: Alex Moore, Bob Kumar, Carol Diaz, and Frank Osei. Sources: 23_ledger_update.md, 01_org_update_payments.md, 12_onboarding_carol.md.",
+    "citations": [
+      "23_ledger_update.md",
+      "01_org_update_payments.md",
+      "12_onboarding_carol.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Alice Chen'], 37 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Alice Chen?",
+    "expect": [
+      "6|six"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "6 people report directly to Alice Chen.",
+    "citations": [
+      "29_reorg.md",
+      "01_org_update_payments.md",
+      "23_ledger_update.md",
+      "12_onboarding_carol.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Alice Chen?",
+    "expect": [
+      "6|six"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "6 people report directly to Alice Chen.",
+    "citations": [
+      "Query result: directReportCount = 6"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: directReportCount = 6"
+    ],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "Which project has the most people working on it?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": false,
+    "answer": "The Search team has four named members: Dave Lee, Eve Park, Hiro Tanaka, and Ines Moreau. The context doesn\u2019t provide comparable team or project headcounts for Payments and Platform, so I can\u2019t determine which has the most people.",
+    "citations": [
+      "02_search_team.md",
+      "17_cto_all_hands.md"
+    ],
+    "known": false,
+    "invented_citations": [
+      "02_search_team.md"
+    ],
+    "retrieval": "top-3: 02_search_team_page.md (0.75), 15_office_lisbon.md (0.70), 17_cto_all_hands.md (0.70)"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which project has the most people working on it?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "I can\u2019t determine which project has the most people working on it because the context is empty.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=[], 0 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which project has the most people working on it?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Atlas has the most people working on it, with 4 people.",
+    "citations": [
+      "Query result provided in the context"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result provided in the context"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which project has the most people working on it?",
+    "expect": [
+      "Atlas"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Atlas, with 4 people working on it.",
+    "citations": [
+      "Query result provided in the context"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result provided in the context"
+    ],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "How many projects use Kafka?",
+    "expect": [
+      "4|four"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": false,
+    "answer": "Two projects use Kafka: Orion ingests events via Kafka, and Beacon ships metrics through Kafka. [07_orion_readme.md] [10_beacon_readme.md]",
+    "citations": [
+      "07_orion_readme.md",
+      "10_beacon_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 07_orion_readme.md (0.74), 20_tech_radar.md (0.74), 10_beacon_readme.md (0.73)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many projects use Kafka?",
+    "expect": [
+      "4|four"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Four projects use Kafka: Atlas, Beacon, Lens, and Orion.",
+    "citations": [
+      "05_atlas_readme.md",
+      "10_beacon_readme.md",
+      "08_lens_readme.md",
+      "07_orion_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Kafka'], 29 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many projects use Kafka?",
+    "expect": [
+      "4|four"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "4 projects use Kafka.",
+    "citations": [
+      "Query result: project_count = 4"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: project_count = 4"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many projects use Kafka?",
+    "expect": [
+      "4|four"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "4 projects use Kafka.",
+    "citations": [
+      "Query result: project_count = 4"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: project_count = 4"
+    ],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "Which office has the fewest people?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": false,
+    "answer": "Berlin has 6 people, and Toronto has 6 people, so neither office has fewer; they are tied.",
+    "citations": [
+      "13_office_berlin.md",
+      "14_office_toronto.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 13_office_berlin.md (0.74), 14_office_toronto.md (0.73), 02_search_team_page.md (0.72)"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which office has the fewest people?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "The context does not contain information about office headcounts.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=[], 0 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which office has the fewest people?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Lisbon has the fewest people, with 4.",
+    "citations": [
+      "Query result in the provided context"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result in the provided context"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which office has the fewest people?",
+    "expect": [
+      "Lisbon"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Lisbon, with 4 people.",
+    "citations": [
+      "Query result row: office Lisbon, people 4"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result row: office Lisbon, people 4"
+    ],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "Which teams own more than one project that uses Kafka?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Payments",
+      "Platform"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "Search owns only Orion, and Platform owns only Beacon, among the projects identified as using Kafka; no team is shown as owning more than one Kafka-using project.",
+    "citations": [
+      "07_orion_readme.md",
+      "10_beacon_readme.md",
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 07_orion_readme.md (0.77), 10_beacon_readme.md (0.76), 16_incident_kafka.md (0.74)"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which teams own more than one project that uses Kafka?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Payments",
+      "Platform"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Search owns two projects that use Kafka: Lens and Orion. [08_lens_readme.md, 07_orion_readme.md, 16_incident_kafka.md]",
+    "citations": [
+      "08_lens_readme.md",
+      "07_orion_readme.md",
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Kafka'], 29 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which teams own more than one project that uses Kafka?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Payments",
+      "Platform"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Search owns more than one project that uses Kafka (2 projects).",
+    "citations": [
+      "Query result in the provided context"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result in the provided context"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "Which teams own more than one project that uses Kafka?",
+    "expect": [
+      "Search"
+    ],
+    "forbid": [
+      "Payments",
+      "Platform"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Search owns more than one project that uses Kafka (2 projects).",
+    "citations": [
+      "08_lens_readme.md",
+      "07_orion_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "not-found",
+    "q": "Who works on Project Zeus?",
+    "expect": [],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "The context does not say who works on Project Zeus.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "top-3: 02_search_team_page.md (0.72), 07_orion_readme.md (0.70), 13_office_berlin.md (0.70)"
+  },
+  {
+    "type": "not-found",
+    "q": "Who works on Project Zeus?",
+    "expect": [],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "The provided context does not say who works on Project Zeus.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=[], 0 facts"
+  },
+  {
+    "type": "not-found",
+    "q": "Who works on Project Zeus?",
+    "expect": [],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "The context does not include the query results, so I can\u2019t determine who works on Project Zeus.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "empty, accepted (attempt 2)"
+  },
+  {
+    "type": "not-found",
+    "q": "Who works on Project Zeus?",
+    "expect": [],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "The context does not say who works on Project Zeus.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used vector (tried ['cypher', 'traverse', 'vector']); top-3: 02_search_team_page.md (0.72), 07_orion_readme.md (0.70), 13_office_berlin.md (0.70)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher",
+      "traverse",
+      "vector"
+    ]
+  },
+  {
+    "type": "not-found",
+    "q": "What is Dave Lee's salary?",
+    "expect": [],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "The context does not state Dave Lee\u2019s salary.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "top-3: 02_search_team_page.md (0.69), 22_lens_update.md (0.67), 25_orion_quality.md (0.66)"
+  },
+  {
+    "type": "not-found",
+    "q": "What is Dave Lee's salary?",
+    "expect": [],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "The context does not provide Dave Lee\u2019s salary.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=['Dave Lee'], 39 facts"
+  },
+  {
+    "type": "not-found",
+    "q": "What is Dave Lee's salary?",
+    "expect": [],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Dave Lee\u2019s salary is not provided; the query returned null.",
+    "citations": [
+      "Query result: MATCH (p:Person {name: 'Dave Lee'}) RETURN null AS salary \u2192 salary: null"
+    ],
+    "known": false,
+    "invented_citations": [
+      "Query result: MATCH (p:Person {name: 'Dave Lee'}) RETURN null AS salary \u2192 salary: null"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "not-found",
+    "q": "What is Dave Lee's salary?",
+    "expect": [],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "The context does not provide Dave Lee\u2019s salary.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "route ['vector', 'cypher', 'traverse'] -> used traverse (tried ['vector', 'cypher', 'traverse']); seeds=['Dave Lee'], 39 facts",
+    "route": [
+      "vector",
+      "cypher",
+      "traverse"
+    ],
+    "tried": [
+      "vector",
+      "cypher",
+      "traverse"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Alex Moore work from?",
+    "expect": [
+      "Berlin"
+    ],
+    "forbid": [
+      "Toronto"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "Alex Moore works from the Berlin office.",
+    "citations": [
+      "28_directory_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 28_directory_update.md (0.73), 23_ledger_update.md (0.69), 14_office_toronto.md (0.69)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Alex Moore work from?",
+    "expect": [
+      "Berlin"
+    ],
+    "forbid": [
+      "Toronto"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Alex Moore works from the Berlin office.",
+    "citations": [
+      "21_new_hires.md",
+      "28_directory_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Alex Kim', 'Alex Moore'], 63 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Alex Moore work from?",
+    "expect": [
+      "Berlin"
+    ],
+    "forbid": [
+      "Toronto"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Alex Moore works from the Berlin office.",
+    "citations": [
+      "21_new_hires.md",
+      "28_directory_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Which office does Alex Moore work from?",
+    "expect": [
+      "Berlin"
+    ],
+    "forbid": [
+      "Toronto"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Alex Moore works from the Berlin office.",
+    "citations": [
+      "21_new_hires.md",
+      "28_directory_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Who does Jane Wilson report to?",
+    "expect": [
+      "Priya Nair"
+    ],
+    "forbid": [
+      "Dave Lee",
+      "Alice Chen"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "Jane Wilson reports to Priya. [24_forge_oncall.md]",
+    "citations": [
+      "24_forge_oncall.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 24_forge_oncall.md (0.74), 04_platform_team.md (0.72), 02_search_team_page.md (0.70)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who does Jane Wilson report to?",
+    "expect": [
+      "Priya Nair"
+    ],
+    "forbid": [
+      "Dave Lee",
+      "Alice Chen"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Jane Wilson reports to Priya Nair.",
+    "citations": [
+      "24_forge_oncall.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Jane Wilson'], 24 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who does Jane Wilson report to?",
+    "expect": [
+      "Priya Nair"
+    ],
+    "forbid": [
+      "Dave Lee",
+      "Alice Chen"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Jane Wilson reports to Priya Nair.",
+    "citations": [
+      "24_forge_oncall.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who does Jane Wilson report to?",
+    "expect": [
+      "Priya Nair"
+    ],
+    "forbid": [
+      "Dave Lee",
+      "Alice Chen"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Jane Wilson reports to Priya Nair.",
+    "citations": [
+      "24_forge_oncall.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that Alex Kim belongs to?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "The context says Alex Kim is in Toronto, but does not identify which team he belongs to or who leads that team.",
+    "citations": [
+      "28_directory_update.md",
+      "02_search_team_page.md",
+      "22_lens_update.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "top-3: 02_search_team_page.md (0.77), 22_lens_update.md (0.72), 28_directory_update.md (0.71)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that Alex Kim belongs to?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Alex Kim belongs to Search, which is led by Dave Lee.",
+    "citations": [
+      "21_new_hires.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Alex Kim'], 32 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that Alex Kim belongs to?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team that Alex Kim belongs to.",
+    "citations": [
+      "21_new_hires.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Who leads the team that Alex Kim belongs to?",
+    "expect": [
+      "Dave Lee"
+    ],
+    "forbid": [
+      "Alice Chen"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Dave Lee leads the Search team that Alex Kim belongs to.",
+    "citations": [
+      "21_new_hires.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which project uses MongoDB Atlas, and which team owns that project?",
+    "expect": [
+      "Ledger",
+      "Payments"
+    ],
+    "forbid": [
+      "Search",
+      "Platform"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "Ledger uses MongoDB Atlas. The context does not say which team owns Ledger.",
+    "citations": [
+      "23_ledger_update.md",
+      "05_atlas_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 05_atlas_readme.md (0.76), 27_tech_notes.md (0.75), 23_ledger_update.md (0.74)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which project uses MongoDB Atlas, and which team owns that project?",
+    "expect": [
+      "Ledger",
+      "Payments"
+    ],
+    "forbid": [
+      "Search",
+      "Platform"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Ledger uses MongoDB Atlas, and Payments owns Ledger. [23_ledger_update.md; 27_tech_notes.md; 06_ledger_readme.md]",
+    "citations": [
+      "23_ledger_update.md",
+      "27_tech_notes.md",
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Atlas', 'MongoDB Atlas'], 41 facts"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which project uses MongoDB Atlas, and which team owns that project?",
+    "expect": [
+      "Ledger",
+      "Payments"
+    ],
+    "forbid": [
+      "Search",
+      "Platform"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Ledger uses MongoDB Atlas, and the Payments team owns Ledger.",
+    "citations": [
+      "23_ledger_update.md",
+      "27_tech_notes.md",
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "multi-hop",
+    "q": "Which project uses MongoDB Atlas, and which team owns that project?",
+    "expect": [
+      "Ledger",
+      "Payments"
+    ],
+    "forbid": [
+      "Search",
+      "Platform"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Ledger uses MongoDB Atlas, and Payments owns Ledger.",
+    "citations": [
+      "23_ledger_update.md",
+      "27_tech_notes.md",
+      "06_ledger_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Dave Lee?",
+    "expect": [
+      "5|five"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": false,
+    "answer": "Five people report directly to Dave Lee: Eve Park, Hiro Tanaka, Ines Moreau, and W. Chen, plus the team members described collectively as engineers. However, the context explicitly names only four direct reports, so the total is not established.",
+    "citations": [
+      "02_search_team.md",
+      "25_orion_quality.md"
+    ],
+    "known": false,
+    "invented_citations": [
+      "02_search_team.md"
+    ],
+    "retrieval": "top-3: 02_search_team_page.md (0.75), 25_orion_quality.md (0.69), 28_directory_update.md (0.69)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Dave Lee?",
+    "expect": [
+      "5|five"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Five people report directly to Dave Lee: Alex Kim, Eve Park, Hiro Tanaka, Ines Moreau, and Omar Haddad.",
+    "citations": [
+      "22_lens_update.md",
+      "02_search_team_page.md",
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Dave Lee'], 39 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Dave Lee?",
+    "expect": [
+      "5|five"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "5 people report directly to Dave Lee.",
+    "citations": [
+      "03_transfer_omar.md",
+      "02_search_team_page.md",
+      "22_lens_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people report directly to Dave Lee?",
+    "expect": [
+      "5|five"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "5 people report directly to Dave Lee.",
+    "citations": [
+      "Query result: people_reporting_directly = 5"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: people_reporting_directly = 5"
+    ],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people work on Lens?",
+    "expect": [
+      "3|three"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": false,
+    "answer": "Four people work on Lens: Alex, Hiro T. (Hiro Tanaka), and Ines Moreau are named as Lens contributors, and Lens is owned by the Search team, which includes Dave Lee. [22_lens_update.md; 08_lens_readme.md; 02_search_team_page.md]",
+    "citations": [
+      "22_lens_update.md",
+      "08_lens_readme.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 22_lens_update.md (0.81), 08_lens_readme.md (0.78), 02_search_team_page.md (0.73)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people work on Lens?",
+    "expect": [
+      "3|three"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Three people work on Lens: Alex Kim, Hiro Tanaka, and Ines Moreau.",
+    "citations": [
+      "22_lens_update.md",
+      "08_lens_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Lens'], 30 facts"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people work on Lens?",
+    "expect": [
+      "3|three"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "3 people work on Lens.",
+    "citations": [],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "aggregation",
+    "q": "How many people work on Lens?",
+    "expect": [
+      "3|three"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "3 people work on Lens.",
+    "citations": [
+      "08_lens_readme.md",
+      "22_lens_update.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "1-hop",
+    "q": "Who is the CTO?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Priya Nair",
+      "Alice Chen"
+    ],
+    "system": "vector",
+    "correct": true,
+    "answer": "The CTO is Maria Santos.",
+    "citations": [
+      "01_org_update_payments.md",
+      "02_search_team_page.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 01_org_update_payments.md (0.75), 04_platform_team.md (0.75), 02_search_team_page.md (0.74)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who is the CTO?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Priya Nair",
+      "Alice Chen"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Maria Santos is the CTO.",
+    "citations": [],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Maria Santos'], 33 facts"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who is the CTO?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Priya Nair",
+      "Alice Chen"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "The CTO is Maria Santos.",
+    "citations": [
+      "Query result: Maria Santos"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: Maria Santos"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "1-hop",
+    "q": "Who is the CTO?",
+    "expect": [
+      "Maria Santos"
+    ],
+    "forbid": [
+      "Priya Nair",
+      "Alice Chen"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Maria Santos is the CTO.",
+    "citations": [
+      "Query result: MATCH (p:Person {title: 'CTO'}) RETURN p.name AS name"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: MATCH (p:Person {title: 'CTO'}) RETURN p.name AS name"
+    ],
+    "retrieval": "route ['cypher', 'vector', 'traverse'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "vector",
+      "traverse"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "temporal",
+    "q": "Which team was Omar Haddad on before his current team?",
+    "expect": [
+      "Platform"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Omar Haddad was on the Platform team before moving to the Search team.",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 03_transfer_omar.md (0.74), 22_lens_update.md (0.66), 13_office_berlin.md (0.66)"
+  },
+  {
+    "type": "temporal",
+    "q": "Which team was Omar Haddad on before his current team?",
+    "expect": [
+      "Platform"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Omar Haddad was on the Platform team before moving to Search. [03_transfer_omar.md]",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Omar Haddad'], 40 facts"
+  },
+  {
+    "type": "temporal",
+    "q": "Which team was Omar Haddad on before his current team?",
+    "expect": [
+      "Platform"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Omar Haddad was on the Platform team before joining Search.",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "temporal",
+    "q": "Which team was Omar Haddad on before his current team?",
+    "expect": [
+      "Platform"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Omar Haddad was previously on the Platform team.",
+    "citations": [
+      "03_transfer_omar.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "temporal",
+    "q": "Who is currently a member of the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Wei Chen"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "vector",
+    "correct": false,
+    "answer": "The Platform team consists of Dr. Nair, Jack Wilson, Kofi Mensah, and Lena Fischer.",
+    "citations": [
+      "04_platform_team.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 04_platform_team.md (0.82), 02_search_team_page.md (0.75), 09_forge_readme.md (0.75)"
+  },
+  {
+    "type": "temporal",
+    "q": "Who is currently a member of the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Wei Chen"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Current Platform members listed in the context are Jack Wilson, Jane Wilson, Kofi Mensah, Lena Fischer, Priya Nair, and Wei Chen. Sources: 04_platform_team.md, 21_new_hires.md, 24_forge_oncall.md, 29_reorg.md.",
+    "citations": [
+      "04_platform_team.md",
+      "21_new_hires.md",
+      "24_forge_oncall.md",
+      "29_reorg.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Platform'], 39 facts"
+  },
+  {
+    "type": "temporal",
+    "q": "Who is currently a member of the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Wei Chen"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Wei Chen, Jane Wilson, Lena Fischer, Jack Wilson, and Kofi Mensah.",
+    "citations": [
+      "29_reorg.md",
+      "21_new_hires.md",
+      "04_platform_team.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "temporal",
+    "q": "Who is currently a member of the Platform team?",
+    "expect": [
+      "Jack Wilson",
+      "Jane Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Wei Chen"
+    ],
+    "forbid": [
+      "Omar Haddad"
+    ],
+    "system": "router",
+    "correct": true,
+    "answer": "Wei Chen, Jane Wilson, Lena Fischer, Jack Wilson, and Kofi Mensah.",
+    "citations": [
+      "29_reorg.md",
+      "21_new_hires.md",
+      "04_platform_team.md",
+      "11_meeting_atlas_reliability.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "temporal",
+    "q": "Since what year has Alice Chen led the Payments team?",
+    "expect": [
+      "2021"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Alice Chen has led the Payments team since 2021.",
+    "citations": [
+      "01_org_update_payments.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 01_org_update_payments.md (0.81), 25_orion_quality.md (0.77), 29_reorg.md (0.72)"
+  },
+  {
+    "type": "temporal",
+    "q": "Since what year has Alice Chen led the Payments team?",
+    "expect": [
+      "2021"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": true,
+    "answer": "Alice Chen has led the Payments team since 2021.",
+    "citations": [
+      "01_org_update_payments.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "seeds=['Alice Chen', 'Payments'], 45 facts"
+  },
+  {
+    "type": "temporal",
+    "q": "Since what year has Alice Chen led the Payments team?",
+    "expect": [
+      "2021"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": true,
+    "answer": "Alice Chen has led the Payments team since 2021.",
+    "citations": [
+      "01_org_update_payments.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "temporal",
+    "q": "Since what year has Alice Chen led the Payments team?",
+    "expect": [
+      "2021"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Alice Chen has led the Payments team since 2021.",
+    "citations": [
+      "01_org_update_payments.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['cypher', 'traverse', 'vector'] -> used cypher (tried ['cypher']); ok (attempt 1)",
+    "route": [
+      "cypher",
+      "traverse",
+      "vector"
+    ],
+    "tried": [
+      "cypher"
+    ]
+  },
+  {
+    "type": "descriptive",
+    "q": "What does Atlas do?",
+    "expect": [
+      "checkout"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Atlas is our checkout service.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 05_atlas_readme.md (0.72), 26_standup_notes.md (0.72), 27_tech_notes.md (0.71)"
+  },
+  {
+    "type": "descriptive",
+    "q": "What does Atlas do?",
+    "expect": [
+      "checkout"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "The context does not say what Atlas does; it only lists its dependencies and technologies used.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=['Atlas'], 41 facts"
+  },
+  {
+    "type": "descriptive",
+    "q": "What does Atlas do?",
+    "expect": [
+      "checkout"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": false,
+    "answer": "The context only lists Atlas\u2019s technologies (Postgres and Kafka), dependencies (Beacon and Ledger), and owning team (Payments); it does not say what Atlas does.",
+    "citations": [
+      "05_atlas_readme.md",
+      "27_tech_notes.md",
+      "16_incident_kafka.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "descriptive",
+    "q": "What does Atlas do?",
+    "expect": [
+      "checkout"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Atlas is our checkout service.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['vector', 'traverse', 'cypher'] -> used vector (tried ['vector']); top-3: 05_atlas_readme.md (0.72), 26_standup_notes.md (0.72), 27_tech_notes.md (0.71)",
+    "route": [
+      "vector",
+      "traverse",
+      "cypher"
+    ],
+    "tried": [
+      "vector"
+    ]
+  },
+  {
+    "type": "descriptive",
+    "q": "What was the impact of the Kafka outage on 2025-06-12?",
+    "expect": [
+      "Atlas",
+      "Orion",
+      "Lens",
+      "Beacon"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Atlas, Orion, Lens, and Beacon were degraded; Ledger was unaffected because it only uses Postgres.",
+    "citations": [
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 16_incident_kafka.md (0.88), 07_orion_readme.md (0.72), 11_meeting_atlas_reliability.md (0.72)"
+  },
+  {
+    "type": "descriptive",
+    "q": "What was the impact of the Kafka outage on 2025-06-12?",
+    "expect": [
+      "Atlas",
+      "Orion",
+      "Lens",
+      "Beacon"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "The context does not state the impact of the Kafka outage on 2025-06-12.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=['Kafka'], 29 facts"
+  },
+  {
+    "type": "descriptive",
+    "q": "What was the impact of the Kafka outage on 2025-06-12?",
+    "expect": [
+      "Atlas",
+      "Orion",
+      "Lens",
+      "Beacon"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": false,
+    "answer": "The context only identifies Lens, Atlas, Beacon, and Orion as projects potentially affected by Kafka; it does not state the outage\u2019s impact on 2025-06-12.",
+    "citations": [
+      "08_lens_readme.md",
+      "05_atlas_readme.md",
+      "10_beacon_readme.md",
+      "07_orion_readme.md",
+      "16_incident_kafka.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "descriptive",
+    "q": "What was the impact of the Kafka outage on 2025-06-12?",
+    "expect": [
+      "Atlas",
+      "Orion",
+      "Lens",
+      "Beacon"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Atlas, Orion, Lens, and Beacon were degraded. Ledger was unaffected because it only uses Postgres.",
+    "citations": [
+      "16_incident_kafka.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['vector', 'traverse', 'cypher'] -> used vector (tried ['vector']); top-3: 16_incident_kafka.md (0.88), 07_orion_readme.md (0.72), 11_meeting_atlas_reliability.md (0.72)",
+    "route": [
+      "vector",
+      "traverse",
+      "cypher"
+    ],
+    "tried": [
+      "vector"
+    ]
+  },
+  {
+    "type": "descriptive",
+    "q": "How many days of paid leave do employees get per year?",
+    "expect": [
+      "25|twenty-five"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Employees get 25 days of paid leave per year.",
+    "citations": [
+      "19_holiday_policy.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 19_holiday_policy.md (0.86), 11_meeting_atlas_reliability.md (0.66), 22_lens_update.md (0.63)"
+  },
+  {
+    "type": "descriptive",
+    "q": "How many days of paid leave do employees get per year?",
+    "expect": [
+      "25|twenty-five"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "The context does not provide this information.",
+    "citations": [],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=[], 0 facts"
+  },
+  {
+    "type": "descriptive",
+    "q": "How many days of paid leave do employees get per year?",
+    "expect": [
+      "25|twenty-five"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": false,
+    "answer": "The number of paid leave days per year is not specified.",
+    "citations": [
+      "Query result: RETURN 'Not specified' AS paid_leave_days_per_year"
+    ],
+    "known": true,
+    "invented_citations": [
+      "Query result: RETURN 'Not specified' AS paid_leave_days_per_year"
+    ],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "descriptive",
+    "q": "How many days of paid leave do employees get per year?",
+    "expect": [
+      "25|twenty-five"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Employees get 25 days of paid leave per year.",
+    "citations": [
+      "19_holiday_policy.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['vector', 'cypher', 'traverse'] -> used vector (tried ['vector']); top-3: 19_holiday_policy.md (0.86), 11_meeting_atlas_reliability.md (0.66), 22_lens_update.md (0.63)",
+    "route": [
+      "vector",
+      "cypher",
+      "traverse"
+    ],
+    "tried": [
+      "vector"
+    ]
+  },
+  {
+    "type": "descriptive",
+    "q": "Why does Atlas depend on Beacon?",
+    "expect": [
+      "alerting"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Atlas depends on Beacon for alerting.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 10_beacon_readme.md (0.73), 05_atlas_readme.md (0.72), 27_tech_notes.md (0.71)"
+  },
+  {
+    "type": "descriptive",
+    "q": "Why does Atlas depend on Beacon?",
+    "expect": [
+      "alerting"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "The context says Atlas depends on Beacon, but does not explain why. [05_atlas_readme.md]",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=['Atlas', 'Beacon'], 57 facts"
+  },
+  {
+    "type": "descriptive",
+    "q": "Why does Atlas depend on Beacon?",
+    "expect": [
+      "alerting"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": false,
+    "answer": "The context shows that Atlas depends on Beacon, with the relationship sourced from `05_atlas_readme.md`, but it does not explain why.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "descriptive",
+    "q": "Why does Atlas depend on Beacon?",
+    "expect": [
+      "alerting"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Atlas depends on Beacon for alerting.",
+    "citations": [
+      "05_atlas_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['vector', 'cypher', 'traverse'] -> used vector (tried ['vector']); top-3: 10_beacon_readme.md (0.73), 05_atlas_readme.md (0.72), 27_tech_notes.md (0.71)",
+    "route": [
+      "vector",
+      "cypher",
+      "traverse"
+    ],
+    "tried": [
+      "vector"
+    ]
+  },
+  {
+    "type": "descriptive",
+    "q": "What is Lens used for?",
+    "expect": [
+      "recommendation|recommendations"
+    ],
+    "forbid": [],
+    "system": "vector",
+    "correct": true,
+    "answer": "Lens powers product recommendations. [08_lens_readme.md]",
+    "citations": [
+      "08_lens_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "top-3: 08_lens_readme.md (0.76), 22_lens_update.md (0.76), 27_tech_notes.md (0.76)"
+  },
+  {
+    "type": "descriptive",
+    "q": "What is Lens used for?",
+    "expect": [
+      "recommendation|recommendations"
+    ],
+    "forbid": [],
+    "system": "traverse",
+    "correct": false,
+    "answer": "The context does not state what Lens is used for; it only lists its dependencies and technologies.",
+    "citations": [
+      "08_lens_readme.md",
+      "27_tech_notes.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "seeds=['Lens'], 30 facts"
+  },
+  {
+    "type": "descriptive",
+    "q": "What is Lens used for?",
+    "expect": [
+      "recommendation|recommendations"
+    ],
+    "forbid": [],
+    "system": "cypher",
+    "correct": false,
+    "answer": "The context lists technologies used by Lens\u2014PyTorch, Kafka, and Python\u2014but does not say what Lens is used for.",
+    "citations": [
+      "08_lens_readme.md",
+      "16_incident_kafka.md",
+      "27_tech_notes.md"
+    ],
+    "known": false,
+    "invented_citations": [],
+    "retrieval": "ok (attempt 1)"
+  },
+  {
+    "type": "descriptive",
+    "q": "What is Lens used for?",
+    "expect": [
+      "recommendation|recommendations"
+    ],
+    "forbid": [],
+    "system": "router",
+    "correct": true,
+    "answer": "Lens powers product recommendations.",
+    "citations": [
+      "08_lens_readme.md"
+    ],
+    "known": true,
+    "invented_citations": [],
+    "retrieval": "route ['vector', 'cypher', 'traverse'] -> used vector (tried ['vector']); top-3: 08_lens_readme.md (0.76), 22_lens_update.md (0.76), 27_tech_notes.md (0.76)",
+    "route": [
+      "vector",
+      "cypher",
+      "traverse"
+    ],
+    "tried": [
+      "vector"
+    ]
+  }
+]

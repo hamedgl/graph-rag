@@ -1,0 +1,711 @@
+[
+  {
+    "a": "Alice Chen",
+    "b": "Maria Santos",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Bob Kumar",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Payments",
+    "b": "payments squad",
+    "type": "Team",
+    "same": false,
+    "why": "llm: There is insufficient evidence to confirm that the 'Payments' team and the 'payments squad' are the exact same entity, as squads are often sub-teams or distinct units, and they own different services with no shared members mentioned."
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Maria Santos (CTO)",
+    "type": "Person",
+    "same": true,
+    "why": "llm: Both mentions refer to Maria Santos, who is identified as the CTO in the company documents."
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Carol Diz",
+    "type": "Person",
+    "same": true,
+    "why": "llm: 'Carol Diz' is an obvious typo for 'Carol Diaz', and both work on the Atlas project (checkout/payments)."
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Maria Santos (CTO)",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Search",
+    "b": "Platform",
+    "type": "Team",
+    "same": false,
+    "why": "llm: Search and Platform are two distinct teams within the company, with different leaders, members, and owned systems. Documents even explicitly mention a member moving from Platform to Search."
+  },
+  {
+    "a": "Maria Santos (CTO)",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Orion",
+    "b": "Atlas",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Orion is the company search engine owned by the Search team, whereas Atlas is the checkout service owned by the payments squad; they are explicitly co-mentioned as distinct systems."
+  },
+  {
+    "a": "Orion",
+    "b": "Beacon",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Orion is a search engine project owned by the Search team, whereas Beacon is a monitoring and alerting project owned by the Platform team. In fact, Orion depends on Beacon, clearly distinguishing them as two different entities."
+  },
+  {
+    "a": "Orion",
+    "b": "Lens",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Orion and Lens are distinct projects; Lens depends on Orion and both are listed alongside each other as separate systems."
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Jane Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Kofi Mensah",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Atlas",
+    "b": "Ledger",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas is the checkout service and Ledger is the accounting service; Atlas explicitly depends on Ledger, proving they are two distinct entities."
+  },
+  {
+    "a": "Atlas",
+    "b": "Beacon",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas is a checkout service owned by the payments squad, while Beacon is a monitoring/alerting service owned by the Platform team. Atlas depends on Beacon. They are distinct entities."
+  },
+  {
+    "a": "Atlas",
+    "b": "Lens",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas is a checkout service owned by the payments squad, whereas Lens is a recommendations service owned by Search. They are also co-mentioned as separate services ('Atlas, Orion, Lens and Beacon were degraded')."
+  },
+  {
+    "a": "Kafka",
+    "b": "PostgreSQL",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka is an event streaming platform and PostgreSQL is a relational database management system; they are distinct technologies."
+  },
+  {
+    "a": "Kafka",
+    "b": "Elasticsearch",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka is a distributed event streaming platform, whereas Elasticsearch is a distributed search and analytics engine. They are two distinct software technologies."
+  },
+  {
+    "a": "Kafka",
+    "b": "PyTorch",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka is a distributed event streaming platform, whereas PyTorch is an open-source machine learning framework. They are completely different technologies."
+  },
+  {
+    "a": "Kafka",
+    "b": "Kubernetes",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Mention A refers to Kafka, an event streaming platform, whereas Mention B refers to Kubernetes, a container orchestration platform. They are distinct technologies."
+  },
+  {
+    "a": "PostgreSQL",
+    "b": "Postgres",
+    "type": "Tech",
+    "same": true,
+    "why": "llm: Postgres is a standard alias and the official common name for PostgreSQL. Both mentions refer to the PostgreSQL database technology, with Mention B even noting that Atlas talks to Postgres, matching Mention A's fact that Atlas uses PostgreSQL."
+  },
+  {
+    "a": "Ledger",
+    "b": "Beacon",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Ledger is an accounting service owned by Payments, while Beacon is a monitoring and alerting service owned by Platform. They are distinct entities mentioned side by side in the text."
+  },
+  {
+    "a": "Ledger",
+    "b": "Forge",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Ledger is Payments' accounting service, while Forge is Platform's CI/CD system; Ledger depends on Forge. They are distinct entities."
+  },
+  {
+    "a": "Beacon",
+    "b": "Lens",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Beacon and Lens are distinct projects; Beacon handles monitoring/alerting and is owned by Platform, while Lens powers product recommendations and is owned by Search. They are also co-referenced in the same sentence as separate affected services."
+  },
+  {
+    "a": "Alex Kim",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Priya",
+    "b": "Priya Nair",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Frank Osei",
+      "Hiro Tanaka",
+      "Jack Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Priya Nair",
+      "Jane Wilson"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Candidate 8 (Priya Nair) is the only candidate whose name matches 'Priya'."
+  },
+  {
+    "a": "Carol",
+    "b": "Carol Diaz",
+    "candidates": [
+      "Alice Chen",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu",
+      "Dave Lee",
+      "Eve Park",
+      "Omar Haddad",
+      "Lena Fischer",
+      "Carol Diz"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Carol Diaz is located in Berlin and reports to Alice Chen (A. Chen), perfectly matching the mention's facts."
+  },
+  {
+    "a": "A. Chen",
+    "b": "Alice Chen",
+    "candidates": [
+      "Alice Chen",
+      "Wei Chen"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Alice Chen matches the initial 'A. Chen', is located in Toronto, and Carol (Diaz) reports to her."
+  },
+  {
+    "a": "Grace",
+    "b": "Grace Liu",
+    "candidates": [
+      "Alice Chen",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Grace Liu is the only candidate whose name matches 'Grace', and there is no contradicting context."
+  },
+  {
+    "a": "Alice",
+    "b": "Alice Chen",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu",
+      "Hiro Tanaka",
+      "Jack Wilson",
+      "Priya Nair"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Alice Chen is the only candidate named Alice, and multiple team members report to her."
+  },
+  {
+    "a": "W. Chen",
+    "b": "Wei Chen",
+    "candidates": [
+      "Alice Chen",
+      "Dave Lee",
+      "Wei Chen"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Wei Chen matches the name initial 'W. Chen', belongs to the Search team led by Dave Lee, matching the fact that W. Chen reports to Dave Lee."
+  },
+  {
+    "a": "Dave",
+    "b": "Dave Lee",
+    "candidates": [
+      "Bob Kumar",
+      "Carol Diaz",
+      "Dave Lee",
+      "Maria Santos (CTO)",
+      "Eve Park",
+      "Hiro Tanaka",
+      "Ines Moreau",
+      "Omar Haddad",
+      "Lena Fischer"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Dave refers to Dave Lee, the only candidate named Dave in the candidates list."
+  },
+  {
+    "a": "Ines",
+    "b": "Ines Moreau",
+    "candidates": [
+      "Dave Lee",
+      "Eve Park",
+      "Hiro Tanaka",
+      "Ines Moreau"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Ines Moreau is the only candidate whose first name is Ines."
+  },
+  {
+    "a": "Hiro T.",
+    "b": "Hiro Tanaka",
+    "candidates": [
+      "Hiro Tanaka"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Hiro Tanaka is the only candidate matching 'Hiro T.' in the closed-world candidate list, and there is no direct contradiction."
+  },
+  {
+    "a": "Dr. Nair",
+    "b": "Priya Nair",
+    "candidates": [
+      "the CTO",
+      "Priya Nair"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Priya Nair is the only candidate with the surname Nair, and there is no contradiction in the context."
+  },
+  {
+    "a": "Kofi",
+    "b": "Kofi Mensah",
+    "candidates": [
+      "Jack Wilson",
+      "Kofi Mensah",
+      "Lena Fischer"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Kofi Mensah is the only candidate whose name matches 'Kofi', and the context does not contradict the match."
+  },
+  {
+    "a": "Alex",
+    "b": null,
+    "candidates": [
+      "Alex Kim",
+      "Alex Moore"
+    ],
+    "type": "Person",
+    "same": false,
+    "why": "llm-link: Neither candidate (Alex Kim in Search or Alex Moore in Payments) is associated with Lens or reporting to Dave, so neither candidate can be clearly identified."
+  },
+  {
+    "a": "A. Moore",
+    "b": "Alex Moore",
+    "candidates": [
+      "Alex Moore"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Alex Moore is the only candidate matching 'A. Moore' in this closed world, and the context does not contradict."
+  }
+]

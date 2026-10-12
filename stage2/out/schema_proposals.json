@@ -1,0 +1,72 @@
+[
+  {
+    "enables_questions": [
+      "What is a person's title or job role (e.g., CTO, ML engineer)?",
+      "Who holds executive or specific technical roles across the organization?"
+    ],
+    "change": "Add property 'title' / 'role' to (:Person) (or relation (:Person)-[:HAS_ROLE]->(:Role))",
+    "compatibility": "additive"
+  },
+  {
+    "compatibility": "additive",
+    "enables_questions": [
+      "How long has someone led or been part of a team?",
+      "What is the historical team membership/transfer timeline for an employee?"
+    ],
+    "change": "Add temporal properties ('since', 'startDate', 'endDate') to team leadership and membership relations like (:Person)-[:LEADS]->(:Team) and (:Person)-[:MEMBER_OF]->(:Team)"
+  },
+  {
+    "enables_questions": [
+      "What is the purpose or high-level function of a service (e.g., Atlas, Ledger)?",
+      "Which services handle specific domains like checkout or accounting?"
+    ],
+    "change": "Add property 'description' to (:Service) / (:System) nodes",
+    "compatibility": "additive"
+  },
+  {
+    "compatibility": "additive",
+    "change": "Add property 'purpose' (or 'reason') to (:Service)-[:DEPENDS_ON]->(:Service) relation",
+    "enables_questions": [
+      "Why does one service depend on another (e.g., account balances, alerting)?",
+      "What functionality would be impaired if a dependency fails?"
+    ]
+  },
+  {
+    "compatibility": "additive",
+    "enables_questions": [
+      "Who is or was on-call for a service or during an incident?",
+      "What is the on-call schedule for a given team or tool?"
+    ],
+    "change": "New relation (:Person)-[:ON_CALL_FOR]->(:Service|:Team|:Incident) with optional date/schedule properties"
+  },
+  {
+    "compatibility": "additive",
+    "enables_questions": [
+      "What tech radar status (e.g., Adopt, Trial) does a technology have?",
+      "Which teams or services use a given technology?"
+    ],
+    "change": "Add technology lifecycle tracking via property 'status' on (:Technology) and relation (:Team|:Service)-[:USES_TECH]->(:Technology)"
+  },
+  {
+    "compatibility": "additive",
+    "enables_questions": [
+      "Which services were degraded during an incident?",
+      "What past error spikes or incidents affected customer-facing flows?"
+    ],
+    "change": "New relations/properties for operational status and incidents: (:Service)-[:HAD_STATUS]->(:StatusEvent) or incident impact tracking"
+  },
+  {
+    "change": "Add office opening date property 'openedIn' to (:Office|:Hub) nodes",
+    "compatibility": "additive",
+    "enables_questions": [
+      "When was a specific office or hub established?"
+    ]
+  },
+  {
+    "change": "New relation (:Person)-[:REPORTS_TO_ROLE]->(:Role) or support for reporting to roles",
+    "enables_questions": [
+      "Which role does a person or team lead report to?"
+    ],
+    "compatibility": "additive"
+  }
+]

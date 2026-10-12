@@ -1,0 +1,115 @@
+{"object": "Payments", "since": 2021, "relation": "LEADS", "subject_type": "Person", "object_type": "Team", "subject": "Alice Chen", "role": null, "until": null, "source": "01_org_update_payments.md"}
+{"relation": "REPORTS_TO", "subject": "Alice Chen", "role": null, "object": "Maria Santos", "object_type": "Person", "until": null, "since": null, "subject_type": "Person", "source": "01_org_update_payments.md"}
+{"role": null, "until": null, "since": null, "subject_type": "Person", "relation": "MEMBER_OF", "subject": "Bob Kumar", "object_type": "Team", "object": "Payments", "source": "01_org_update_payments.md"}
+{"object": "Alice Chen", "subject_type": "Person", "subject": "Bob Kumar", "role": null, "relation": "REPORTS_TO", "until": null, "object_type": "Person", "since": null, "source": "01_org_update_payments.md"}
+{"role": null, "since": null, "object": "Payments", "until": null, "object_type": "Team", "subject_type": "Person", "relation": "MEMBER_OF", "subject": "Carol Diaz", "source": "01_org_update_payments.md"}
+{"subject_type": "Person", "object_type": "Person", "object": "Alice Chen", "role": null, "since": null, "relation": "REPORTS_TO", "until": null, "subject": "Carol Diaz", "source": "01_org_update_payments.md"}
+{"subject_type": "Person", "role": null, "object": "Payments", "subject": "Frank Osei", "since": null, "object_type": "Team", "until": null, "relation": "MEMBER_OF", "source": "01_org_update_payments.md"}
+{"object_type": "Person", "relation": "REPORTS_TO", "object": "Alice Chen", "subject_type": "Person", "subject": "Frank Osei", "until": null, "since": null, "role": null, "source": "01_org_update_payments.md"}
+{"subject_type": "Person", "role": null, "subject": "Grace Liu", "relation": "MEMBER_OF", "object": "Payments", "since": null, "object_type": "Team", "until": null, "source": "01_org_update_payments.md"}
+{"object_type": "Person", "relation": "REPORTS_TO", "role": null, "object": "Alice Chen", "subject_type": "Person", "subject": "Grace Liu", "since": null, "until": null, "source": "01_org_update_payments.md"}
+{"since": null, "role": null, "subject": "Dave Lee", "relation": "LEADS", "object_type": "Team", "until": null, "object": "Search", "subject_type": "Person", "source": "02_search_team_page.md"}
+{"role": null, "since": null, "subject_type": "Person", "subject": "Dave Lee", "object": "Maria Santos", "until": null, "relation": "REPORTS_TO", "object_type": "Person", "source": "02_search_team_page.md"}
+{"subject_type": "Person", "subject": "Eve Park", "until": null, "role": null, "object": "Search", "relation": "MEMBER_OF", "since": null, "object_type": "Team", "source": "02_search_team_page.md"}
+{"relation": "MEMBER_OF", "subject": "Hiro Tanaka", "role": null, "since": null, "object_type": "Team", "object": "Search", "subject_type": "Person", "until": null, "source": "02_search_team_page.md"}
+{"subject": "Ines Moreau", "object": "Search", "object_type": "Team", "role": null, "until": null, "subject_type": "Person", "since": null, "relation": "MEMBER_OF", "source": "02_search_team_page.md"}
+{"subject_type": "Person", "object": "Dave Lee", "subject": "Eve Park", "relation": "REPORTS_TO", "until": null, "object_type": "Person", "role": null, "since": null, "source": "02_search_team_page.md"}
+{"since": null, "object": "Dave Lee", "role": null, "subject_type": "Person", "object_type": "Person", "until": null, "relation": "REPORTS_TO", "subject": "Hiro Tanaka", "source": "02_search_team_page.md"}
+{"object_type": "Person", "subject": "Ines Moreau", "subject_type": "Person", "since": null, "object": "Dave Lee", "relation": "REPORTS_TO", "role": null, "until": null, "source": "02_search_team_page.md"}
+{"role": null, "relation": "MEMBER_OF", "since": null, "object": "Platform", "subject_type": "Person", "subject": "Omar Haddad", "object_type": "Team", "until": 2024, "source": "03_transfer_omar.md"}
+{"object_type": "Team", "until": null, "object": "Search", "since": 2024, "subject_type": "Person", "subject": "Omar Haddad", "role": null, "relation": "MEMBER_OF", "source": "03_transfer_omar.md"}
+{"relation": "REPORTS_TO", "until": null, "subject": "Omar Haddad", "object_type": "Person", "object": "Dave Lee", "role": null, "subject_type": "Person", "since": null, "source": "03_transfer_omar.md"}
+{"until": null, "subject_type": "Person", "role": "SRE", "object": "Orion", "object_type": "Project", "since": null, "subject": "Omar Haddad", "relation": "WORKS_ON", "source": "03_transfer_omar.md"}
+{"until": null, "object_type": "Team", "subject": "Priya Nair", "subject_type": "Person", "role": null, "since": null, "object": "Platform", "relation": "LEADS", "source": "04_platform_team.md"}
+{"relation": "REPORTS_TO", "object": "Maria Santos", "subject_type": "Person", "subject": "Priya Nair", "object_type": "Person", "since": null, "role": null, "until": null, "source": "04_platform_team.md"}
+{"since": null, "subject_type": "Person", "object_type": "Team", "until": null, "relation": "MEMBER_OF", "role": null, "subject": "Jack Wilson", "object": "Platform", "source": "04_platform_team.md"}
+{"relation": "MEMBER_OF", "subject": "Kofi Mensah", "until": null, "object_type": "Team", "object": "Platform", "since": null, "subject_type": "Person", "role": null, "source": "04_platform_team.md"}
+{"subject": "Lena Fischer", "subject_type": "Person", "until": null, "object": "Platform", "role": null, "relation": "MEMBER_OF", "object_type": "Team", "since": null, "source": "04_platform_team.md"}
+{"role": null, "subject": "Jack Wilson", "relation": "REPORTS_TO", "since": null, "subject_type": "Person", "object_type": "Person", "object": "Priya Nair", "until": null, "source": "04_platform_team.md"}
+{"object_type": "Person", "relation": "REPORTS_TO", "until": null, "role": null, "subject_type": "Person", "since": null, "subject": "Kofi Mensah", "object": "Priya Nair", "source": "04_platform_team.md"}
+{"until": null, "object": "Priya Nair", "role": null, "since": null, "subject_type": "Person", "object_type": "Person", "relation": "REPORTS_TO", "subject": "Lena Fischer", "source": "04_platform_team.md"}
+{"relation": "OWNS", "until": null, "object_type": "Project", "object": "Atlas", "since": null, "role": null, "subject": "Payments", "subject_type": "Team", "source": "05_atlas_readme.md"}
+{"object_type": "Tech", "subject_type": "Project", "until": null, "object": "Kafka", "relation": "USES", "since": null, "subject": "Atlas", "role": null, "source": "05_atlas_readme.md"}
+{"since": null, "relation": "USES", "subject": "Atlas", "subject_type": "Project", "role": null, "until": null, "object_type": "Tech", "object": "Postgres", "source": "05_atlas_readme.md"}
+{"subject_type": "Project", "until": null, "relation": "DEPENDS_ON", "object": "Ledger", "since": null, "object_type": "Project", "role": null, "subject": "Atlas", "source": "05_atlas_readme.md"}
+{"relation": "DEPENDS_ON", "until": null, "subject": "Atlas", "object_type": "Project", "since": null, "object": "Beacon", "subject_type": "Project", "role": null, "source": "05_atlas_readme.md"}
+{"object_type": "Project", "until": null, "role": "backend", "object": "Atlas", "relation": "WORKS_ON", "subject_type": "Person", "since": 2024, "subject": "Bob Kumar", "source": "05_atlas_readme.md"}
+{"object": "Atlas", "until": null, "object_type": "Project", "subject_type": "Person", "subject": "Carol Diaz", "relation": "WORKS_ON", "since": 2025, "role": "backend", "source": "05_atlas_readme.md"}
+{"relation": "WORKS_ON", "until": null, "role": "frontend", "object": "Atlas", "subject": "Grace Liu", "since": 2025, "object_type": "Project", "subject_type": "Person", "source": "05_atlas_readme.md"}
+{"subject_type": "Team", "relation": "OWNS", "subject": "Payments", "until": null, "object_type": "Project", "since": null, "object": "Ledger", "role": null, "source": "06_ledger_readme.md"}
+{"role": null, "until": null, "object_type": "Tech", "object": "Postgres", "subject": "Ledger", "relation": "USES", "subject_type": "Project", "since": null, "source": "06_ledger_readme.md"}
+{"until": null, "object": "Forge", "role": null, "subject": "Ledger", "relation": "DEPENDS_ON", "subject_type": "Project", "since": null, "object_type": "Project", "source": "06_ledger_readme.md"}
+{"subject": "Frank Osei", "since": 2023, "relation": "WORKS_ON", "role": "data engineer", "object": "Ledger", "until": null, "subject_type": "Person", "object_type": "Project", "source": "06_ledger_readme.md"}
+{"subject_type": "Person", "role": "backend engineer", "object_type": "Project", "since": 2024, "until": null, "relation": "WORKS_ON", "object": "Ledger", "subject": "Grace Liu", "source": "06_ledger_readme.md"}
+{"relation": "OWNS", "subject": "Search", "object": "Orion", "object_type": "Project", "since": null, "until": null, "subject_type": "Team", "role": null, "source": "07_orion_readme.md"}
+{"object": "Elasticsearch", "since": null, "subject": "Orion", "until": null, "subject_type": "Project", "role": null, "object_type": "Tech", "relation": "USES", "source": "07_orion_readme.md"}
+{"subject": "Orion", "subject_type": "Project", "since": null, "object_type": "Tech", "until": null, "object": "Kafka", "role": null, "relation": "USES", "source": "07_orion_readme.md"}
+{"since": null, "object": "Beacon", "relation": "DEPENDS_ON", "subject": "Orion", "role": null, "object_type": "Project", "until": null, "subject_type": "Project", "source": "07_orion_readme.md"}
+{"object": "Orion", "role": "search engineer", "object_type": "Project", "subject": "Eve Park", "since": 2022, "until": null, "subject_type": "Person", "relation": "WORKS_ON", "source": "07_orion_readme.md"}
+{"subject_type": "Person", "object": "Orion", "relation": "WORKS_ON", "role": "SRE", "since": 2023, "object_type": "Project", "until": null, "subject": "Omar Haddad", "source": "07_orion_readme.md"}
+{"object": "Lens", "until": null, "subject_type": "Team", "since": null, "relation": "OWNS", "object_type": "Project", "role": null, "subject": "Search", "source": "08_lens_readme.md"}
+{"since": null, "until": null, "subject_type": "Project", "subject": "Lens", "relation": "USES", "object": "PyTorch", "object_type": "Tech", "role": null, "source": "08_lens_readme.md"}
+{"since": null, "until": null, "role": null, "object_type": "Tech", "relation": "USES", "object": "Kafka", "subject": "Lens", "subject_type": "Project", "source": "08_lens_readme.md"}
+{"until": null, "object_type": "Project", "relation": "DEPENDS_ON", "since": null, "role": null, "subject_type": "Project", "object": "Orion", "subject": "Lens", "source": "08_lens_readme.md"}
+{"since": 2024, "object": "Lens", "role": "ML engineer", "until": null, "object_type": "Project", "subject": "Hiro Tanaka", "subject_type": "Person", "relation": "WORKS_ON", "source": "08_lens_readme.md"}
+{"since": 2025, "role": "data scientist", "until": null, "relation": "WORKS_ON", "subject": "Ines Moreau", "subject_type": "Person", "object_type": "Project", "object": "Lens", "source": "08_lens_readme.md"}
+{"subject": "Platform", "role": null, "subject_type": "Team", "relation": "OWNS", "object_type": "Project", "since": null, "object": "Forge", "until": null, "source": "09_forge_readme.md"}
+{"until": null, "subject": "Forge", "relation": "USES", "role": null, "since": null, "object": "Kubernetes", "subject_type": "Project", "object_type": "Tech", "source": "09_forge_readme.md"}
+{"role": "devops engineer", "relation": "WORKS_ON", "until": null, "subject_type": "Person", "object": "Forge", "since": 2022, "object_type": "Project", "subject": "Jack Wilson", "source": "09_forge_readme.md"}
+{"role": null, "subject": "Platform", "object": "Beacon", "since": null, "object_type": "Project", "relation": "OWNS", "until": null, "subject_type": "Team", "source": "10_beacon_readme.md"}
+{"subject_type": "Project", "since": null, "object": "Kubernetes", "until": null, "role": null, "subject": "Beacon", "relation": "USES", "object_type": "Tech", "source": "10_beacon_readme.md"}
+{"object_type": "Tech", "until": null, "subject_type": "Project", "role": null, "object": "Kafka", "subject": "Beacon", "relation": "USES", "since": null, "source": "10_beacon_readme.md"}
+{"object_type": "Project", "role": "SRE", "since": 2024, "subject_type": "Person", "subject": "Kofi Mensah", "object": "Beacon", "relation": "WORKS_ON", "until": null, "source": "10_beacon_readme.md"}
+{"relation": "WORKS_ON", "object_type": "Project", "role": "backend engineer", "until": null, "subject_type": "Person", "subject": "Lena Fischer", "object": "Beacon", "since": 2023, "source": "10_beacon_readme.md"}
+{"since": 2025, "object": "Atlas", "subject": "Lena Fischer", "until": null, "relation": "WORKS_ON", "subject_type": "Person", "role": "SRE", "object_type": "Project", "source": "11_meeting_atlas_reliability.md"}
+{"relation": "MEMBER_OF", "since": null, "object_type": "Team", "subject": "Lena Fischer", "until": null, "role": null, "object": "Platform", "subject_type": "Person", "source": "11_meeting_atlas_reliability.md"}
+{"since": null, "object_type": "Person", "relation": "REPORTS_TO", "role": null, "until": null, "object": "Priya Nair", "subject": "Lena Fischer", "subject_type": "Person", "source": "11_meeting_atlas_reliability.md"}
+{"subject_type": "Person", "object": "Berlin", "role": null, "until": null, "relation": "LOCATED_IN", "object_type": "Office", "since": null, "subject": "Carol Diaz", "source": "12_onboarding_carol.md"}
+{"role": null, "until": null, "relation": "REPORTS_TO", "object": "Alice Chen", "subject": "Carol Diaz", "subject_type": "Person", "object_type": "Person", "since": null, "source": "12_onboarding_carol.md"}
+{"object": "Toronto", "relation": "LOCATED_IN", "since": null, "subject": "Alice Chen", "until": null, "role": null, "object_type": "Office", "subject_type": "Person", "source": "12_onboarding_carol.md"}
+{"since": null, "object": "Berlin", "subject": "Bob Kumar", "object_type": "Office", "until": null, "subject_type": "Person", "relation": "LOCATED_IN", "role": null, "source": "13_office_berlin.md"}
+{"relation": "LOCATED_IN", "subject_type": "Person", "role": null, "object_type": "Office", "since": null, "object": "Berlin", "subject": "Carol Diaz", "until": null, "source": "13_office_berlin.md"}
+{"subject_type": "Person", "relation": "LOCATED_IN", "object_type": "Office", "object": "Berlin", "since": null, "subject": "Dave Lee", "until": null, "role": null, "source": "13_office_berlin.md"}
+{"until": null, "relation": "LOCATED_IN", "object": "Berlin", "role": null, "subject_type": "Person", "subject": "Eve Park", "since": null, "object_type": "Office", "source": "13_office_berlin.md"}
+{"object": "Berlin", "subject": "Omar Haddad", "until": null, "relation": "LOCATED_IN", "since": null, "subject_type": "Person", "object_type": "Office", "role": null, "source": "13_office_berlin.md"}
+{"object_type": "Office", "role": null, "since": null, "relation": "LOCATED_IN", "subject_type": "Person", "subject": "Lena Fischer", "object": "Berlin", "until": null, "source": "13_office_berlin.md"}
+{"subject": "Alice Chen", "since": null, "object": "Toronto", "until": null, "subject_type": "Person", "role": null, "relation": "LOCATED_IN", "object_type": "Office", "source": "14_office_toronto.md"}
+{"relation": "LOCATED_IN", "subject_type": "Person", "object_type": "Office", "subject": "Frank Osei", "object": "Toronto", "role": null, "since": null, "until": null, "source": "14_office_toronto.md"}
+{"object_type": "Office", "until": null, "subject": "Hiro Tanaka", "relation": "LOCATED_IN", "role": null, "since": null, "subject_type": "Person", "object": "Toronto", "source": "14_office_toronto.md"}
+{"role": null, "object_type": "Office", "relation": "LOCATED_IN", "object": "Toronto", "since": null, "subject_type": "Person", "subject": "Priya Nair", "until": null, "source": "14_office_toronto.md"}
+{"role": null, "object": "Toronto", "since": null, "relation": "LOCATED_IN", "object_type": "Office", "subject": "Jack Wilson", "subject_type": "Person", "until": null, "source": "14_office_toronto.md"}
+{"object_type": "Office", "until": null, "object": "Toronto", "since": null, "subject": "Maria Santos", "relation": "LOCATED_IN", "role": null, "subject_type": "Person", "source": "14_office_toronto.md"}
+{"until": null, "subject": "Grace Liu", "relation": "LOCATED_IN", "object_type": "Office", "subject_type": "Person", "role": null, "since": null, "object": "Lisbon", "source": "15_office_lisbon.md"}
+{"object_type": "Office", "subject": "Ines Moreau", "subject_type": "Person", "since": null, "role": null, "until": null, "relation": "LOCATED_IN", "object": "Lisbon", "source": "15_office_lisbon.md"}
+{"role": null, "object_type": "Office", "subject_type": "Person", "object": "Lisbon", "since": null, "relation": "LOCATED_IN", "subject": "Kofi Mensah", "until": null, "source": "15_office_lisbon.md"}
+{"object_type": "Tech", "role": null, "subject": "Atlas", "object": "Kafka", "until": null, "subject_type": "Project", "since": null, "relation": "USES", "source": "16_incident_kafka.md"}
+{"subject_type": "Project", "object_type": "Tech", "subject": "Orion", "since": null, "role": null, "object": "Kafka", "relation": "USES", "until": null, "source": "16_incident_kafka.md"}
+{"until": null, "subject_type": "Project", "relation": "USES", "object_type": "Tech", "subject": "Lens", "role": null, "since": null, "object": "Kafka", "source": "16_incident_kafka.md"}
+{"relation": "USES", "subject": "Beacon", "object": "Kafka", "since": null, "subject_type": "Project", "role": null, "object_type": "Tech", "until": null, "source": "16_incident_kafka.md"}
+{"object": "Postgres", "subject": "Ledger", "subject_type": "Project", "object_type": "Tech", "until": null, "relation": "USES", "role": null, "since": null, "source": "16_incident_kafka.md"}
+{"role": null, "object": "Search", "object_type": "Team", "since": null, "subject_type": "Person", "until": null, "subject": "Alex Kim", "relation": "MEMBER_OF", "source": "21_new_hires.md"}
+{"since": null, "relation": "LOCATED_IN", "subject_type": "Person", "subject": "Alex Kim", "role": null, "until": null, "object": "Toronto", "object_type": "Office", "source": "21_new_hires.md"}
+{"role": null, "until": null, "object_type": "Team", "object": "Payments", "relation": "MEMBER_OF", "since": null, "subject_type": "Person", "subject": "Alex Moore", "source": "21_new_hires.md"}
+{"subject": "Alex Moore", "subject_type": "Person", "role": null, "until": null, "since": null, "relation": "LOCATED_IN", "object": "Berlin", "object_type": "Office", "source": "21_new_hires.md"}
+{"subject": "Jane Wilson", "since": null, "relation": "MEMBER_OF", "role": null, "object": "Platform", "object_type": "Team", "until": null, "subject_type": "Person", "source": "21_new_hires.md"}
+{"subject": "Jane Wilson", "until": null, "object_type": "Office", "since": null, "subject_type": "Person", "object": "Lisbon", "relation": "LOCATED_IN", "role": null, "source": "21_new_hires.md"}
+{"subject_type": "Person", "until": null, "subject": "Wei Chen", "role": null, "since": null, "object": "Search", "object_type": "Team", "relation": "MEMBER_OF", "source": "21_new_hires.md"}
+{"role": null, "until": null, "object_type": "Office", "since": null, "subject_type": "Person", "subject": "Wei Chen", "object": "Berlin", "relation": "LOCATED_IN", "source": "21_new_hires.md"}
+{"object": "Lens", "subject": "Alex Kim", "subject_type": "Person", "since": 2025, "until": null, "role": "ML engineer", "relation": "WORKS_ON", "object_type": "Project", "source": "22_lens_update.md"}
+{"role": null, "subject_type": "Person", "subject": "Alex Kim", "object": "Dave Lee", "relation": "REPORTS_TO", "since": null, "object_type": "Person", "until": null, "source": "22_lens_update.md"}
+{"subject_type": "Person", "role": "backend engineer", "object_type": "Project", "subject": "Alex Moore", "since": 2025, "until": null, "relation": "WORKS_ON", "object": "Ledger", "source": "23_ledger_update.md"}
+{"object": "Alice Chen", "subject_type": "Person", "role": null, "subject": "Alex Moore", "relation": "REPORTS_TO", "since": null, "object_type": "Person", "until": null, "source": "23_ledger_update.md"}
+{"object": "MongoDB Atlas", "subject": "Ledger", "subject_type": "Project", "relation": "USES", "object_type": "Tech", "since": null, "role": null, "until": null, "source": "23_ledger_update.md"}
+{"since": 2025, "relation": "WORKS_ON", "role": "SRE", "subject_type": "Person", "until": null, "object_type": "Project", "object": "Forge", "subject": "Jane Wilson", "source": "24_forge_oncall.md"}
+{"since": null, "until": null, "object": "Priya Nair", "relation": "REPORTS_TO", "role": null, "object_type": "Person", "subject": "Jane Wilson", "subject_type": "Person", "source": "24_forge_oncall.md"}
+{"since": 2025, "role": null, "relation": "WORKS_ON", "object_type": "Project", "until": null, "object": "Orion", "subject": "Wei Chen", "subject_type": "Person", "source": "25_orion_quality.md"}
+{"object": "Dave Lee", "subject": "Wei Chen", "role": null, "object_type": "Person", "until": null, "since": null, "subject_type": "Person", "relation": "REPORTS_TO", "source": "25_orion_quality.md"}
+{"object": "Payments", "relation": "MEMBER_OF", "until": null, "since": null, "role": null, "subject": "Alice Chen", "object_type": "Team", "subject_type": "Person", "source": "25_orion_quality.md"}
+{"until": null, "relation": "WORKS_ON", "object": "Atlas", "object_type": "Project", "subject": "Carol Diaz", "role": "checkout bugs", "subject_type": "Person", "since": null, "source": "26_standup_notes.md"}
+{"object": "Python", "subject": "Lens", "since": null, "relation": "USES", "subject_type": "Project", "until": null, "role": null, "object_type": "Tech", "source": "27_tech_notes.md"}
+{"object_type": "Tech", "relation": "USES", "since": null, "until": null, "object": "Postgres", "subject_type": "Project", "role": null, "subject": "Atlas", "source": "27_tech_notes.md"}
+{"until": null, "subject_type": "Project", "subject": "Ledger", "object": "MongoDB Atlas", "relation": "USES", "object_type": "Tech", "since": null, "role": null, "source": "27_tech_notes.md"}
+{"relation": "LOCATED_IN", "object": "Toronto", "role": null, "since": null, "subject_type": "Person", "subject": "Alex Kim", "until": null, "object_type": "Office", "source": "28_directory_update.md"}
+{"subject": "Alex Moore", "since": null, "object_type": "Office", "subject_type": "Person", "role": null, "until": null, "relation": "LOCATED_IN", "object": "Berlin", "source": "28_directory_update.md"}
+{"relation": "LOCATED_IN", "subject": "Wei Chen", "since": null, "until": null, "object_type": "Office", "role": null, "subject_type": "Person", "object": "Berlin", "source": "28_directory_update.md"}
+{"since": null, "subject": "Jane Wilson", "subject_type": "Person", "object": "Lisbon", "relation": "LOCATED_IN", "until": null, "role": null, "object_type": "Office", "source": "28_directory_update.md"}

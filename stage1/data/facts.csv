@@ -1,0 +1,78 @@
+subject,subject_type,relation,object,object_type,properties
+Alice Chen,Person,LEADS,Payments,Team,
+Dave Lee,Person,LEADS,Search,Team,
+Priya Nair,Person,LEADS,Platform,Team,
+Bob Kumar,Person,MEMBER_OF,Payments,Team,
+Carol Diaz,Person,MEMBER_OF,Payments,Team,
+Frank Osei,Person,MEMBER_OF,Payments,Team,
+Grace Liu,Person,MEMBER_OF,Payments,Team,
+Eve Park,Person,MEMBER_OF,Search,Team,
+Hiro Tanaka,Person,MEMBER_OF,Search,Team,
+Ines Moreau,Person,MEMBER_OF,Search,Team,
+Omar Haddad,Person,MEMBER_OF,Search,Team,
+Jack Wilson,Person,MEMBER_OF,Platform,Team,
+Kofi Mensah,Person,MEMBER_OF,Platform,Team,
+Lena Fischer,Person,MEMBER_OF,Platform,Team,
+Alice Chen,Person,REPORTS_TO,Maria Santos,Person,
+Dave Lee,Person,REPORTS_TO,Maria Santos,Person,
+Priya Nair,Person,REPORTS_TO,Maria Santos,Person,
+Bob Kumar,Person,REPORTS_TO,Alice Chen,Person,
+Carol Diaz,Person,REPORTS_TO,Alice Chen,Person,
+Frank Osei,Person,REPORTS_TO,Alice Chen,Person,
+Grace Liu,Person,REPORTS_TO,Alice Chen,Person,
+Eve Park,Person,REPORTS_TO,Dave Lee,Person,
+Hiro Tanaka,Person,REPORTS_TO,Dave Lee,Person,
+Ines Moreau,Person,REPORTS_TO,Dave Lee,Person,
+Omar Haddad,Person,REPORTS_TO,Dave Lee,Person,
+Jack Wilson,Person,REPORTS_TO,Priya Nair,Person,
+Kofi Mensah,Person,REPORTS_TO,Priya Nair,Person,
+Lena Fischer,Person,REPORTS_TO,Priya Nair,Person,
+Alice Chen,Person,LOCATED_IN,Toronto,Office,
+Frank Osei,Person,LOCATED_IN,Toronto,Office,
+Hiro Tanaka,Person,LOCATED_IN,Toronto,Office,
+Priya Nair,Person,LOCATED_IN,Toronto,Office,
+Jack Wilson,Person,LOCATED_IN,Toronto,Office,
+Maria Santos,Person,LOCATED_IN,Toronto,Office,
+Bob Kumar,Person,LOCATED_IN,Berlin,Office,
+Carol Diaz,Person,LOCATED_IN,Berlin,Office,
+Dave Lee,Person,LOCATED_IN,Berlin,Office,
+Eve Park,Person,LOCATED_IN,Berlin,Office,
+Omar Haddad,Person,LOCATED_IN,Berlin,Office,
+Lena Fischer,Person,LOCATED_IN,Berlin,Office,
+Grace Liu,Person,LOCATED_IN,Lisbon,Office,
+Ines Moreau,Person,LOCATED_IN,Lisbon,Office,
+Kofi Mensah,Person,LOCATED_IN,Lisbon,Office,
+Payments,Team,OWNS,Atlas,Project,
+Payments,Team,OWNS,Ledger,Project,
+Search,Team,OWNS,Orion,Project,
+Search,Team,OWNS,Lens,Project,
+Platform,Team,OWNS,Forge,Project,
+Platform,Team,OWNS,Beacon,Project,
+Atlas,Project,USES,Kafka,Tech,
+Atlas,Project,USES,Postgres,Tech,
+Ledger,Project,USES,Postgres,Tech,
+Orion,Project,USES,Elasticsearch,Tech,
+Orion,Project,USES,Kafka,Tech,
+Lens,Project,USES,PyTorch,Tech,
+Lens,Project,USES,Kafka,Tech,
+Forge,Project,USES,Kubernetes,Tech,
+Beacon,Project,USES,Kubernetes,Tech,
+Beacon,Project,USES,Kafka,Tech,
+Atlas,Project,DEPENDS_ON,Ledger,Project,
+Atlas,Project,DEPENDS_ON,Beacon,Project,
+Orion,Project,DEPENDS_ON,Beacon,Project,
+Lens,Project,DEPENDS_ON,Orion,Project,
+Ledger,Project,DEPENDS_ON,Forge,Project,
+Bob Kumar,Person,WORKS_ON,Atlas,Project,role=backend engineer;since=2024
+Carol Diaz,Person,WORKS_ON,Atlas,Project,role=backend engineer;since=2025
+Grace Liu,Person,WORKS_ON,Atlas,Project,role=frontend engineer;since=2025
+Lena Fischer,Person,WORKS_ON,Atlas,Project,role=SRE;since=2025
+Frank Osei,Person,WORKS_ON,Ledger,Project,role=data engineer;since=2023
+Grace Liu,Person,WORKS_ON,Ledger,Project,role=backend engineer;since=2024
+Eve Park,Person,WORKS_ON,Orion,Project,role=search engineer;since=2022
+Omar Haddad,Person,WORKS_ON,Orion,Project,role=SRE;since=2023
+Hiro Tanaka,Person,WORKS_ON,Lens,Project,role=ML engineer;since=2024
+Ines Moreau,Person,WORKS_ON,Lens,Project,role=data scientist;since=2025
+Jack Wilson,Person,WORKS_ON,Forge,Project,role=devops engineer;since=2022
+Kofi Mensah,Person,WORKS_ON,Beacon,Project,role=SRE;since=2024
+Lena Fischer,Person,WORKS_ON,Beacon,Project,role=backend engineer;since=2023

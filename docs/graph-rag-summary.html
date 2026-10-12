@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graph RAG Lab Summary</title>
+<style>
+  :root { --bg:#fff; --fg:#1d1d1f; --muted:#5f6368; --rule:#e3e3e3; --code:#f4f4f5; --accent:#2f6fde; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#18181b; --fg:#ececee; --muted:#a1a1aa; --rule:#33333a; --code:#27272a; --accent:#7aa7ff; } }
+  body { background:var(--bg); color:var(--fg); font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; margin:0; }
+  main { max-width:880px; margin:0 auto; padding:32px 16px 64px; }
+  nav { display:flex; gap:16px; padding:12px 0; border-bottom:1px solid var(--rule); margin-bottom:24px; font-size:14px; }
+  a { color:var(--accent); }
+  h1 { font-size:30px; margin:8px 0 4px; } h2 { font-size:21px; margin-top:40px; border-bottom:1px solid var(--rule); padding-bottom:6px; }
+  table { border-collapse:collapse; width:100%; font-size:14px; margin:12px 0; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--rule); padding:6px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--code); }
+  code { background:var(--code); padding:1px 5px; border-radius:4px; font-size:0.9em; }
+  figure { margin:16px 0; } figure img { width:100%; height:auto; border:1px solid var(--rule); border-radius:8px; background:#fff; }
+  figcaption { color:var(--muted); font-size:13px; margin-top:6px; }
+  time { color:var(--muted); }
+  hr.tab { border:0; border-top:2px solid var(--rule); margin:56px 0 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#graph-rag-lab-summary">Summary</a><a href="#architecture-tab">Architecture</a></nav>
+<h1 id="graph-rag-lab-summary">Graph RAG Lab Summary</h1>
+<p><time data-atom="date" datetime="2026-10-12">2026-10-12</time></p>
+<p>A hand-built graph RAG pipeline (Neo4j, two-pass extraction, entity resolution, router) answers 39.5 of 40 relational, temporal, structured and descriptive questions, against 20.5 for plain vector RAG on the same 30 documents and HR export.</p>
+<h2 id="architecture">Architecture</h2>
+<figure><img src="img/architecture-overview.png" alt="architecture · ingest path and query path" loading="lazy"><figcaption>architecture · ingest path and query path</figcaption></figure>
+<p>Text2Cypher and traversal read the graph; vector search reads the raw documents. The router tries them in ranked order and falls back when an answer comes back unknown.</p>
+<p>Component-level diagrams for ingest, entity resolution, query and evaluation: <a href="#architecture-tab">Architecture</a></p>
+<h2 id="results-by-stage">Results by stage</h2>
+<p>The graph beat vector RAG at every stage; the router won once questions mixed relational and descriptive. Scores are on each stage&#39;s own question set, so compare within a row.</p>
+<table><thead><tr><th>Stage</th><th>Questions</th><th>Vector</th><th>Best graph system</th><th>What decided the score</th></tr></thead><tbody><tr><td>1.7 PoC</td><td>19</td><td>12</td><td>Text2Cypher 18</td><td>Aggregation: the database counts, top-k cannot</td></tr><tr><td>2.0 LightRAG benchmark</td><td>19</td><td>12</td><td>LightRAG 11 (ours 18)</td><td>No entity resolution: 89 nodes for 32 real entities</td></tr><tr><td>2.1 Entity resolution (28 docs)</td><td>25</td><td>11</td><td>Text2Cypher 25</td><td>Candidate-set linking: 38/38 entities, 0 wrong merges</td></tr><tr><td>2.2 Schema v2 (history, titles)</td><td>29</td><td>13</td><td>Text2Cypher 28</td><td>Text2Cypher applied <code>until IS NULL</code> from the schema rule</td></tr><tr><td>2.4 Router (+ descriptive)</td><td>34</td><td>20</td><td>Router 34</td><td>Vector 5/5 on descriptive, graph 0/5: routing wins both</td></tr><tr><td>2.6 Repeated runs (3x)</td><td>34</td><td>19.0</td><td>Router 33.7</td><td>Spread of 1-2 questions per run</td></tr><tr><td>2.5 HR CSV merged (2x)</td><td>40</td><td>20.5</td><td>Router 39.5</td><td>Structured data invisible to vector (1/6)</td></tr></tbody></table>
+<p>Extraction quality on 77 known facts: per-doc 96% precision / 86% recall, two-pass 100% / 100%; LangChain <code>LLMGraphTransformer</code> defaults 64% / 65%.</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<p>Quality came from design decisions, not from the framework: the same LLM scored 64% or 100% on extraction depending on the pipeline around it.</p>
+<ol><li><p><strong>Entity resolution decides graph quality.</strong> Every tool that skipped it (our v1, LangChain, LightRAG) split one entity into several nodes and broke multi-hop chains.</p></li><li><p><strong>Show the LLM all candidates at once.</strong> Pairwise &quot;same entity?&quot; judging merged 2 of 7; closed-world candidate linking merged 10 of 10 with zero wrong merges.</p></li><li><p><strong>Embeddings block, they do not decide.</strong> Alex Kim vs Alex Moore scored 0.90, the same as true matches. Calibrate thresholds on your data (0.7 guessed, 0.85 measured).</p></li><li><p><strong>Put each job in the right layer.</strong> Counting belongs in Cypher, names in extraction, history in the schema. Retrieval tricks cannot repair missing edges.</p></li><li><p><strong>One schema file feeds extraction, validation and Text2Cypher.</strong> Adding <code>until</code> updated query behaviour with no prompt edits.</p></li><li><p><strong>Silent failures are the norm.</strong> A dropped <code>title</code> field, a swallowed pipe error, a hidden subprocess crash and a 180 s hung call all looked like success until checked.</p></li><li><p><strong>Re-evaluate after every fix.</strong> Three of my fixes caused regressions; the regression gate caught them.</p></li><li><p><strong>Single runs vary by 1-2 questions.</strong> Decide on repeated runs, never on one.</p></li><li><p><strong>Noise causes confident errors.</strong> Traversal&#39;s 40-fact contexts produced invented edges and miscounts; Text2Cypher never hallucinated.</p></li><li><p><strong>Raw text is the injection surface.</strong> The graph path held; vector RAG repeated a planted false claim when it was the only source.</p></li></ol>
+<h2 id="cost-and-latency">Cost and latency</h2>
+<p>The router is the most accurate and the most expensive: about 4x vector&#39;s latency and 6x its tokens per question. LLM calls are ~99% of latency; Neo4j queries take under 0.03 s.</p>
+<table><thead><tr><th>System</th><th>p50 (s)</th><th>p95 (s)</th><th>LLM calls</th><th>Tokens in</th><th>Tokens out</th></tr></thead><tbody><tr><td>Router</td><td>5.8</td><td>9.2</td><td>3</td><td>1,801</td><td>241</td></tr><tr><td>Text2Cypher</td><td>4.0</td><td>8.5</td><td>2</td><td>1,242</td><td>216</td></tr><tr><td>Traversal</td><td>1.4</td><td>2.8</td><td>1</td><td>890</td><td>52</td></tr><tr><td>Vector</td><td>1.5</td><td>2.3</td><td>1</td><td>289</td><td>49</td></tr></tbody></table>
+<p>Measured over 3 traced runs x 34 questions (102 answers per system), query model <code>cx/gpt-6-luna</code>. Cypher generation is the largest token cost (~955 tokens in per call) because the schema and full entity catalog go in every prompt. Prices omitted: the gateway&#39;s per-token rates are not known.</p>
+<h2 id="recommended-stack">Recommended stack</h2>
+<p>Keep the graph and the extraction pipeline in your own code; use frameworks only where they are maintained and transparent.</p>
+<table><thead><tr><th>Layer</th><th>Choice</th><th>Why</th></tr></thead><tbody><tr><td>Graph database</td><td>Neo4j</td><td>Industry standard; read-only transactions are enforced by the database, not by the prompt</td></tr><tr><td>Extraction</td><td>Own two-pass pipeline + schema validation</td><td>100% vs 64% for <code>LLMGraphTransformer</code> defaults, which also sit in a package being sunset</td></tr><tr><td>Entity resolution</td><td>Blocking + closed-world candidate linking + cannot-link rules</td><td>The single biggest quality lever measured</td></tr><tr><td>Structured sources</td><td>Deterministic import with source priority and a conflict log</td><td>HR IDs anchor identity; conflicts are logged, never silently resolved</td></tr><tr><td>Retrieval</td><td>Text2Cypher + traversal + vector behind an LLM router</td><td>Each wins a different question type</td></tr><tr><td>Orchestration</td><td>Plain Python; LangGraph only if the flow outgrows it</td><td>Loops and fallbacks here were a few lines each</td></tr><tr><td>Evaluation</td><td>Code-scored golden set, repeated runs, faithfulness judge, regression gate</td><td>Caught three regressions and every silent failure</td></tr><tr><td>Benchmark</td><td>LightRAG</td><td>Useful baseline; scored 11/19 here because it lacks entity resolution</td></tr></tbody></table>
+<p>LLM roles: <code>cx/gpt-6-luna</code> answers and writes Cypher; <code>ag/gemini-3.8-flash-low</code> extracts, resolves entities and judges faithfulness, so no model grades its own answers.</p>
+<h2 id="open-issues">Open issues</h2>
+<p>None of these breaks today&#39;s 40 questions; each will matter on real data.</p>
+<table><thead><tr><th>Issue</th><th>Seen as</th><th>Fix</th></tr></thead><tbody><tr><td>Vector RAG repeats planted claims</td><td>&quot;Mallory Evans leads Payments&quot; when the attack doc was the only source</td><td>Source trust levels, &quot;data not instructions&quot; prompting, flag single low-trust claims</td></tr><tr><td>Property-level provenance missing</td><td>An <code>until</code> set by a deleted doc survives on an edge other docs still support</td><td>Provenance per property, or facts as nodes (bi-temporal)</td></tr><tr><td>Conflicts are last-writer-wins</td><td>Ingest order, not document date, decides <code>until</code></td><td>Date every document; order claims by date</td></tr><tr><td>Entity catalog grows with the graph</td><td>~955 tokens per Cypher call at 39 entities</td><td>Put only question-relevant entities in the prompt</td></tr><tr><td>Blocking grows superlinearly</td><td>248 candidate pairs from 57 mentions</td><td>Fulltext or vector index for candidate lookup</td></tr><tr><td>Title vs project role is blurry</td><td>Jack&#39;s Forge role stored as his job title</td><td>Define title as HR-only, or merge the two concepts</td></tr><tr><td>Gemini extraction error</td><td><code>Alice Chen MEMBER_OF Payments</code> (a lead is not a member)</td><td>Cardinality / exclusivity rule: LEADS excludes MEMBER_OF</td></tr><tr><td>Faithfulness judge not audited</td><td>4 flagged hallucinations checked by hand, the rest not</td><td>Label ~50 answers by hand, measure judge agreement</td></tr><tr><td>Small, self-made dataset</td><td>30 docs, 40 questions, written with the answer key</td><td>Run on a real corpus before trusting the percentages</td></tr></tbody></table>
+<h2 id="where-things-are">Where things are</h2>
+<p>All code lives in <code>~/ai-lab/graph-rag</code>; <code>plan.md</code> tracks progress and <code>CLAUDE.md</code> logs every decision and result.</p>
+<table><thead><tr><th>Path</th><th>What it does</th></tr></thead><tbody><tr><td><code>stage0/</code></td><td>Four concept demos (vector failure, graph basics, pipeline, retrieval styles), stdlib only</td></tr><tr><td><code>stage1/schema.py</code></td><td>Schema v4: labels, relations, rules, cardinality; single source for every prompt and check</td></tr><tr><td><code>stage1/llm.py</code></td><td>One structured-output call per gateway model, timeouts, tracing, <code>calls.jsonl</code> log</td></tr><tr><td><code>stage1/retrieve.py</code></td><td>Text2Cypher (guarded, read-only), traversal, vector baseline</td></tr><tr><td><code>stage1/answer.py</code></td><td>Grounded answers with citations and the <code>known</code> flag</td></tr><tr><td><code>stage1/router.py</code></td><td>Route per question, fall back on unknown</td></tr><tr><td><code>stage1/eval.py</code></td><td>Parallel, code-scored evaluation of any system set</td></tr><tr><td><code>stage2/resolve.py</code></td><td>Mention extraction, blocking, matching, linking, clustering</td></tr><tr><td><code>stage2/ingest.py</code></td><td>Incremental add / remove / sync with a <code>:Document</code> registry</td></tr><tr><td><code>stage2/hr_import.py</code></td><td>HR CSV merge with source priority and a conflict log</td></tr><tr><td><code>stage2/eval_scale.py</code></td><td>Repeated runs, flaky questions, faithfulness judge, regression gate</td></tr><tr><td><code>stage2/ops.py</code></td><td>Latency and token report from traces</td></tr><tr><td><code>stage2/lightrag_bench.py</code></td><td>LightRAG comparison</td></tr><tr><td><code>archive/stage1_langchain/</code></td><td>Dropped LangChain version, kept for the 64% vs 96% lesson</td></tr></tbody></table>
+
+<hr class="tab">
+<h1 id="architecture-tab">Architecture</h1>
+<p>Every component of the graph RAG lab in four flows; each box names the file in <code>~/ai-lab/graph-rag</code> that implements it.</p>
+<h2 id="ingest-pipeline">Ingest pipeline</h2>
+<figure><img src="img/ingest-pipeline.png" alt="ingest pipeline · documents and HR export to Neo4j" loading="lazy"><figcaption>ingest pipeline · documents and HR export to Neo4j</figcaption></figure>
+<p>Only new or changed documents reach the LLM; a deleted document takes away exactly the edges no other source supports. The batch path (<code>stage2/resolve.py</code> then <code>stage1/load.py</code>) rebuilds the same graph from scratch.</p>
+<h2 id="entity-resolution">Entity resolution</h2>
+<figure><img src="img/entity-resolution.png" alt="entity resolution · stage2/resolve.py" loading="lazy"><figcaption>entity resolution · stage2/resolve.py</figcaption></figure>
+<p>Incremental ingest reuses steps 3 to 5 against entities already in the graph (<code>ingest.py resolve_name()</code>), so a new document never re-resolves the whole corpus.</p>
+<h2 id="query-path">Query path</h2>
+<figure><img src="img/query-path.png" alt="query path · router, retrievers, answer" loading="lazy"><figcaption>query path · router, retrievers, answer</figcaption></figure>
+<p>Every LLM call on this path goes through <code>stage1/llm.py call_json()</code>, which picks the transport per model, applies a 30 s timeout with 2 retries, and records a trace.</p>
+<h2 id="evaluation-and-operations">Evaluation and operations</h2>
+<figure><img src="img/evaluation-operations.png" alt="evaluation and operations · stage1/eval.py, stage2/eval_scale.py, stage2/ops.py" loading="lazy"><figcaption>evaluation and operations · stage1/eval.py, stage2/eval_scale.py, stage2/ops.py</figcaption></figure>
+<p>The judge is a different model from the answerer, so no model grades its own answers. The gate caught three regressions introduced by fixes during Stage 2.</p>
+
+</main>
+</body>
+</html>

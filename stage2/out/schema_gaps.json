@@ -1,0 +1,210 @@
+[
+  {
+    "subject": "(:Person {name: 'Alice Chen'})-[:LEADS]->(:Team {name: 'Payments'})",
+    "relation": "since",
+    "evidence": "Alice Chen has led the Payments team since 2021",
+    "kind": "new_property",
+    "object": "2021",
+    "source": "01_org_update_payments.md"
+  },
+  {
+    "relation": "title",
+    "evidence": "our CTO, Maria Santos",
+    "subject": "Maria Santos",
+    "object": "CTO",
+    "kind": "new_property",
+    "source": "01_org_update_payments.md"
+  },
+  {
+    "kind": "new_property",
+    "subject": "Maria Santos",
+    "object": "CTO",
+    "evidence": "Maria Santos (CTO)",
+    "relation": "title",
+    "source": "02_search_team_page.md"
+  },
+  {
+    "evidence": "Omar Haddad has moved from the Platform team to the Search team",
+    "subject": "Omar Haddad",
+    "kind": "history",
+    "object": "Platform",
+    "relation": "MEMBER_OF",
+    "source": "03_transfer_omar.md"
+  },
+  {
+    "subject": "Omar Haddad",
+    "kind": "new_property",
+    "object": "March 2024",
+    "relation": "since",
+    "evidence": "effective March 2024",
+    "source": "03_transfer_omar.md"
+  },
+  {
+    "relation": "REPORTS_TO_ROLE",
+    "kind": "new_relation",
+    "subject": "Priya Nair",
+    "object": "CTO",
+    "evidence": "reports to the CTO",
+    "source": "04_platform_team.md"
+  },
+  {
+    "kind": "new_property",
+    "evidence": "Atlas is our checkout service",
+    "subject": "Atlas",
+    "relation": "description",
+    "object": "checkout service",
+    "source": "05_atlas_readme.md"
+  },
+  {
+    "relation": "purpose",
+    "object": "account balances",
+    "kind": "new_property",
+    "evidence": "Atlas depends on Ledger for account balances",
+    "subject": "DEPENDS_ON",
+    "source": "05_atlas_readme.md"
+  },
+  {
+    "object": "alerting",
+    "kind": "new_property",
+    "evidence": "on Beacon for alerting",
+    "relation": "purpose",
+    "subject": "DEPENDS_ON",
+    "source": "05_atlas_readme.md"
+  },
+  {
+    "kind": "new_property",
+    "object": "accounting service",
+    "subject": "Ledger",
+    "relation": "description",
+    "evidence": "Ledger is the Payments team's accounting service.",
+    "source": "06_ledger_readme.md"
+  },
+  {
+    "subject": "Lens",
+    "kind": "new_relation",
+    "relation": "POWERS",
+    "evidence": "Lens powers product recommendations.",
+    "object": "product recommendations",
+    "source": "08_lens_readme.md"
+  },
+  {
+    "evidence": "Checkout errors spiked twice last month.",
+    "subject": "Checkout",
+    "kind": "history",
+    "object": "last month",
+    "relation": "ERRORS_SPIKED",
+    "source": "11_meeting_atlas_reliability.md"
+  },
+  {
+    "kind": "new_property",
+    "evidence": "Our Lisbon hub opened in 2023.",
+    "relation": "OPENED_IN",
+    "subject": "Lisbon",
+    "object": "2023",
+    "source": "15_office_lisbon.md"
+  },
+  {
+    "relation": "ON_CALL",
+    "evidence": "On-call: Omar Haddad.",
+    "object": "Incident 2025-06-12",
+    "kind": "new_relation",
+    "subject": "Omar Haddad",
+    "source": "16_incident_kafka.md"
+  },
+  {
+    "subject": "Atlas",
+    "object": "Degraded",
+    "evidence": "Atlas, Orion, Lens and Beacon were degraded",
+    "kind": "history",
+    "relation": "STATUS",
+    "source": "16_incident_kafka.md"
+  },
+  {
+    "relation": "title",
+    "kind": "new_property",
+    "subject": "Maria Santos",
+    "evidence": "Maria Santos (CTO)",
+    "object": "CTO",
+    "source": "17_cto_all_hands.md"
+  },
+  {
+    "evidence": "btw I'm also helping Dave with some Orion ranking experiments this week",
+    "relation": "HELPS",
+    "object": "Dave",
+    "subject": "Hiro",
+    "kind": "new_relation",
+    "source": "18_chat_export.md"
+  },
+  {
+    "subject": "PostgreSQL",
+    "relation": "status",
+    "object": "Adopt",
+    "kind": "new_property",
+    "evidence": "Adopt: PostgreSQL (our default database), Kafka (default event bus), Kubernetes.",
+    "source": "20_tech_radar.md"
+  },
+  {
+    "evidence": "Elasticsearch is in use by the search folks.",
+    "kind": "new_relation",
+    "subject": "Search",
+    "object": "Elasticsearch",
+    "relation": "USES_TECH",
+    "source": "20_tech_radar.md"
+  },
+  {
+    "kind": "new_property",
+    "object": "Trial",
+    "subject": "Elasticsearch",
+    "relation": "status",
+    "evidence": "Trial: Elasticsearch is in use by the search folks. PyTorch is used for ML work.",
+    "source": "20_tech_radar.md"
+  },
+  {
+    "relation": "role",
+    "evidence": "Alex Kim joins Search as an ML engineer",
+    "kind": "new_property",
+    "object": "ML engineer",
+    "subject": "Alex Kim",
+    "source": "21_new_hires.md"
+  },
+  {
+    "subject": "Ledger",
+    "relation": "REPLICA_RUNS_ON",
+    "kind": "new_relation",
+    "evidence": "Ledger's analytics replica now runs on MongoDB Atlas.",
+    "object": "MongoDB Atlas",
+    "source": "23_ledger_update.md"
+  },
+  {
+    "object": "Forge",
+    "evidence": "- Week 1: J. Wilson",
+    "kind": "new_relation",
+    "relation": "ON_CALL_FOR",
+    "subject": "Jane Wilson",
+    "source": "24_forge_oncall.md"
+  },
+  {
+    "subject": "Jack",
+    "kind": "new_relation",
+    "evidence": "- Week 2: Jack",
+    "object": "Forge",
+    "relation": "ON_CALL_FOR",
+    "source": "24_forge_oncall.md"
+  },
+  {
+    "object": "Atlas",
+    "evidence": "Alise Chen approved the Atlas release.",
+    "kind": "new_relation",
+    "relation": "APPROVED_RELEASE",
+    "subject": "Alice Chen",
+    "source": "26_standup_notes.md"
+  },
+  {
+    "subject": "Atlas",
+    "relation": "DESCRIPTION",
+    "object": "checkout service",
+    "kind": "new_property",
+    "evidence": "Atlas (our checkout service)",
+    "source": "27_tech_notes.md"
+  }
+]

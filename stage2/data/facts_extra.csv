@@ -1,0 +1,19 @@
+subject,subject_type,relation,object,object_type,properties
+Alex Kim,Person,MEMBER_OF,Search,Team,
+Alex Kim,Person,LOCATED_IN,Toronto,Office,
+Alex Kim,Person,WORKS_ON,Lens,Project,role=ML engineer;since=2025
+Alex Kim,Person,REPORTS_TO,Dave Lee,Person,
+Alex Moore,Person,MEMBER_OF,Payments,Team,
+Alex Moore,Person,LOCATED_IN,Berlin,Office,
+Alex Moore,Person,WORKS_ON,Ledger,Project,role=backend engineer;since=2025
+Alex Moore,Person,REPORTS_TO,Alice Chen,Person,
+Jane Wilson,Person,MEMBER_OF,Platform,Team,
+Jane Wilson,Person,LOCATED_IN,Lisbon,Office,
+Jane Wilson,Person,WORKS_ON,Forge,Project,role=SRE;since=2025
+Jane Wilson,Person,REPORTS_TO,Priya Nair,Person,
+Wei Chen,Person,MEMBER_OF,Search,Team,
+Wei Chen,Person,LOCATED_IN,Berlin,Office,
+Wei Chen,Person,WORKS_ON,Orion,Project,role=search engineer;since=2025
+Wei Chen,Person,REPORTS_TO,Dave Lee,Person,
+Ledger,Project,USES,MongoDB Atlas,Tech,
+Lens,Project,USES,Python,Tech,

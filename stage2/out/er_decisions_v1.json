@@ -1,0 +1,1114 @@
+[
+  {
+    "a": "Alice Chen",
+    "b": "Maria Santos",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.95
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Bob Kumar",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Alice Chen",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Priya",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Alice Chen and Priya are presented as distinct people: Alice leads Payments and reports to Maria Santos, while Priya has a different set of direct reports and is associated with the Platform team. The fact that Priya appears in a list with Alice does not identify them as the same person.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The documents do not provide enough evidence that Carol is the same person as Alice Chen. Mention A says a Carol Diaz reports to Alice Chen, while Mention B identifies Carol as reporting to A. Chen and located in Berlin. These details could fit, but the first name alone and the ambiguous abbreviation are insufficient to establish identity.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Alice Chen",
+    "b": "A. Chen",
+    "type": "Person",
+    "same": true,
+    "why": "llm: A. Chen shares Alice Chen\u2019s Toronto location and is reported to by Carol, matching Alice Chen\u2019s documented location and reporting relationship. The initial and surname are consistent.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Grace",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Alice Chen, while Mention B is only identified as Grace. Although Alice manages someone named Grace Liu, there is no evidence that this is the Grace located in Lisbon; the mentions should not be merged.",
+    "ctx_sim": 0.75
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.75
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Alice Chen, the Payments team lead in Toronto who reports to Maria Santos. Mention B is only identified as Alice, with no evidence linking her to Alice Chen; the different reporting context and lack of identifying details make a merge ambiguous.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Alice Chen",
+    "b": "W. Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Alice Chen as a Payments team lead in Toronto reporting to Maria Santos. Mention B is only identified as W. Chen, working on Orion and in Search while reporting to Dave Lee. There is no evidence connecting W. Chen to Alice Chen, and the reporting relationships differ.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Maria Santos",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Priya",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Maria Santos and Priya are distinct names, and the mentions have no evidence linking them to the same person. Maria is identified as the CTO; Priya is referenced as the manager of a separate group of employees.",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Maria Santos, identified as the CTO. Mention B is named Dave and is described as someone Alex reports to; there is no evidence that Dave is Maria Santos.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Maria Santos, identified as the CTO. Mention B is Alice, a different person whom A. Moore reports to; there is no evidence that Alice refers to Maria Santos.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.94
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Bob Kumar and Carol are listed as distinct people in the same team and in the same roster. Their shared location and reporting line do not outweigh that explicit distinction.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Grace",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Bob Kumar, a person in Berlin who reports to Alice Chen. Mention B is Grace, located in Lisbon; the documents provide no evidence that Grace is Bob Kumar, and the conflicting locations support treating them as different people.",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Bob Kumar and separately lists Dave Lee as another person; Bob reports to Alice Chen. Mention B identifies Dave as Alex\u2019s manager, with no evidence linking him to Bob Kumar.",
+    "ctx_sim": 0.75
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Bob Kumar, while Mention B is Alice, identified only as the person Moore reports to. There is no evidence they are the same person.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Carol",
+    "type": "Person",
+    "same": true,
+    "why": "llm: Mention A identifies Carol Diaz in Berlin reporting to Alice Chen. Mention B is Carol in Berlin reporting to A. Chen, a plausible abbreviation for Alice Chen. The matching location and reporting relationship support that these refer to the same person.",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Grace",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Carol Diaz and Grace are listed as separate people in the same team description, so the documents distinguish them as different entities.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is identified as Carol Diaz, who reports to Alice Chen. Mention B is Dave, and Alex reports to him. There is no evidence that Carol Diaz and Dave are the same person.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Carol Diaz, while Mention B is Alice, who is identified as the person Moore reports to. There is no evidence that Carol Diaz and Alice are the same person.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.89
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Priya",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Frank Osei, while Mention B identifies Priya. The text provides no evidence that these are the same person.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Frank Osei, who reports to Alice Chen and is located in Toronto. Mention B is Carol, who reports to A. Chen and is located in Berlin. Although both report to people whose names may refer to Alice Chen, the distinct names and conflicting locations provide no basis to identify them as the same person.",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Grace",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Frank Osei, who works in Toronto and reports to Alice Chen. Mention B is Grace, located in Lisbon, with no evidence that she is Frank Osei; the differing names and locations suggest different people.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Frank Osei, while Mention B identifies Alice, likely Alice Chen based on the reporting context. They are distinct people.",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Grace Liu, who reports to Alice Chen. Mention B is Carol, who is separately named alongside Grace in the team description; despite the shared manager, there is no evidence they are the same person.",
+    "ctx_sim": 0.78
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Grace",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is identified as Grace Liu, a Payments team member reporting to Alice Chen. Mention B is only identified as Grace and located in Lisbon; there is not enough evidence to link her to Grace Liu.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Grace Liu, who reports to Alice Chen. Mention B is Alice, the person Moore reports to; the documents provide no evidence that Alice is Grace Liu.",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.91
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions provide no evidence that Dave Lee and Carol are the same person. They have different names, and their stated reporting relationships differ.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Ines",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Dave Lee, who leads Search and has Ines Moreau reporting to him. Mention B is only identified as Ines, located in Lisbon, with no evidence linking her to Dave Lee or to Ines Moreau. The shared name alone is insufficient.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Dave Lee as a Berlin-based Search lead with several direct reports. Mention B only names a Dave who Alex reports to, with no distinguishing details linking him to Dave Lee. The shared first name is insufficient to merge them.",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Dave Lee",
+    "b": "W. Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A refers to Dave Lee, who leads Search and is reported to by W. Chen. Mention B is W. Chen, a Search member who works on Orion and reports to Dave Lee. They are distinct people.",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Search",
+    "b": "Platform",
+    "type": "Team",
+    "same": false,
+    "why": "llm: Search and Platform are described as distinct teams with different members and owned products. The text explicitly says Omar Haddad moved from Platform to Search, further confirming they are separate entities.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Eve Park",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Eve Park",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Eve Park",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.89
+  },
+  {
+    "a": "Eve Park",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Eve Park",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The evidence does not establish that Carol is Eve Park. Carol is listed separately from Eve Park in a team roster, and their reporting lines differ; sharing Berlin as a location is insufficient to identify them as the same person.",
+    "ctx_sim": 0.78
+  },
+  {
+    "a": "Eve Park",
+    "b": "Ines",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Eve Park, while Mention B is Ines. Although Ines appears alongside Eve Park in one team roster, nothing indicates they are the same person; the different locations also provide no basis for merging them.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Eve Park",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Dave Lee, while Mention B only identifies someone named Dave. There is not enough information to establish that Mention B refers to Dave Lee.",
+    "ctx_sim": 0.75
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Priya",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Hiro Tanaka, while Mention B identifies Priya. The text in A lists Hiro Tanaka and Priya Nair as separate people, and Hiro reports to Dave Lee; nothing suggests they are the same person.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Hiro T.",
+    "type": "Person",
+    "same": false,
+    "why": "llm: \u201cHiro T.\u201d could be Hiro Tanaka, but the mention provides no confirming details linking them to the Toronto-based Search team member. The evidence is insufficient to merge them.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Ines",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions have different names, and there is no evidence that Ines refers to Hiro Tanaka. The shared team context does not establish that they are the same person; their listed locations also differ.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Hiro Tanaka as someone who reports to Dave Lee, while Mention B refers to Dave as the person Alex reports to. Nothing indicates Hiro Tanaka is Dave.",
+    "ctx_sim": 0.78
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Hiro Tanaka, while Mention B is Alice (likely Alice Chen from the context). The documents provide no evidence that these are the same person.",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Ines Moreau",
+    "b": "Ines",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is identified as Ines Moreau, a data scientist on the Search team working on Lens. Mention B is only identified by the first name Ines and a location in Lisbon. There is not enough evidence to establish that they are the same person.",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Ines Moreau",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Ines Moreau, while Mention B identifies Dave. Ines reports to Dave Lee, which indicates they are distinct people rather than the same entity.",
+    "ctx_sim": 0.74
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The evidence does not identify Carol as Omar Haddad. The shared Berlin location is insufficient, and their reporting lines differ.",
+    "ctx_sim": 0.72
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Omar Haddad and says he reports to Dave Lee. Mention B gives only the first name Dave, with no evidence that this is Dave Lee or that Dave refers to Omar Haddad.",
+    "ctx_sim": 0.71
+  },
+  {
+    "a": "Dr. Nair",
+    "b": "the CTO",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Dr. Nair is described as reporting to the CTO, indicating they are two different people.",
+    "ctx_sim": 0.95
+  },
+  {
+    "a": "Dr. Nair",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions share the surname Nair, but there is no evidence linking Dr. Nair, who leads Platform and reports to the CTO, with Priya Nair, who is listed among several people and is located in Toronto.",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Priya",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Jack Wilson, while Mention B identifies Priya. The shared reporting relationship does not make them the same person.",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Kofi",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Jack Wilson, while Mention B identifies Kofi, who is listed as a separate team member alongside Jack. The documents provide no evidence that these names refer to the same person.",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Jane Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Jack Wilson, who reports to Priya and works on Forge. Mention B is Alice, to whom A. Moore reports. There is no evidence that Jack Wilson and Alice are the same person.",
+    "ctx_sim": 0.78
+  },
+  {
+    "a": "Priya",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Priya, the person whom Kofi Mensah and others report to. Mention B is Kofi Mensah, who reports to Priya. They are distinct people.",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "Priya",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Priya is identified as the person Lena Fischer and others report to, while Lena Fischer is a separate team member who reports to Priya.",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Priya",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is identified only as Priya, with no location or surname. Mention B is Priya Nair, located in Toronto; the shared first name and appearance alongside Jack Wilson are not enough to establish that they are the same person.",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Priya",
+    "b": "Kofi",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Priya, the person that Jack Wilson, Kofi Mensah, Lena Fischer, and Jane Wilson report to. Mention B is Kofi, who works from Lisbon. They are distinct people.",
+    "ctx_sim": 0.79
+  },
+  {
+    "a": "Priya",
+    "b": "Jane Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Priya, the manager that others report to. Mention B is Jane Wilson, who reports to Priya. They are distinct people.",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Kofi Mensah",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.92
+  },
+  {
+    "a": "Kofi Mensah",
+    "b": "Kofi",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention B gives only the first name Kofi and a location, with no link to Platform, Beacon, Priya, or the SRE role. The shared first name is insufficient to identify the same person.",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Lena Fischer",
+    "b": "Carol",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Lena Fischer, while Mention B is identified only as Carol. Although both are associated with Berlin, that location is not enough to establish they are the same person; the reporting relationships also differ.",
+    "ctx_sim": 0.74
+  },
+  {
+    "a": "Lena Fischer",
+    "b": "Kofi",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Lena Fischer, while Mention B is Kofi. The documents identify Kofi Mensah as a separate team member, and provide no evidence that Kofi refers to Lena Fischer.",
+    "ctx_sim": 0.78
+  },
+  {
+    "a": "Lena Fischer",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Lena Fischer, while Mention B identifies someone named Dave. The text says another person reports to Dave, but provides no evidence that Dave is Lena Fischer.",
+    "ctx_sim": 0.75
+  },
+  {
+    "a": "Atlas",
+    "b": "Ledger",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas and Ledger are distinct services. The shared dependency statement and shared owner do not make them the same entity; the documents describe Atlas as a checkout service and Ledger as an accounting service, with Atlas depending on Ledger. \u201cMongoDB Atlas\u201d is explicitly distinguished from the Atlas checkout service.",
+    "ctx_sim": 0.89
+  },
+  {
+    "a": "Atlas",
+    "b": "Beacon",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas and Beacon are distinct projects: Atlas is the checkout service, while Beacon provides monitoring and alerting. The documents explicitly describe Atlas as depending on Beacon.",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Atlas",
+    "b": "Orion",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas is identified as Payments\u2019 checkout service, while Orion is Search\u2019s company search engine. Sharing Kafka and appearing in the same degradation report does not indicate they are the same project.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Atlas",
+    "b": "Lens",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Atlas and Lens are distinct projects: Atlas is a checkout service owned by Payments, while Lens powers product recommendations and is owned by Search. Their shared Kafka-related degradation does not indicate they are the same entity.",
+    "ctx_sim": 0.8
+  },
+  {
+    "a": "Kafka",
+    "b": "Postgres",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka and Postgres are distinct technologies. The shared sentence mentions both, but it does not indicate they are the same entity.",
+    "ctx_sim": 0.83
+  },
+  {
+    "a": "Kafka",
+    "b": "Elasticsearch",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka and Elasticsearch are distinct technologies. The documents mention them as separate components: Orion uses Elasticsearch for indexing and Kafka for event ingestion.",
+    "ctx_sim": 0.88
+  },
+  {
+    "a": "Kafka",
+    "b": "PyTorch",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka and PyTorch are distinct technologies. The shared Lens description says Lens uses PyTorch and consumes Kafka streams, indicating a relationship between them, not that they are the same entity.",
+    "ctx_sim": 0.89
+  },
+  {
+    "a": "Kafka",
+    "b": "Kubernetes",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: Kafka and Kubernetes are distinct technologies. Mention A refers to Kafka, while Mention B refers to Kubernetes; they appear together in the Beacon description but are not the same entity.",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Ledger",
+    "b": "Beacon",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Ledger and Beacon are described as separate services with different owners, functions, and dependencies. Although both are mentioned in the same sentence as dependencies of Atlas, they serve distinct purposes: Ledger provides account balances, while Beacon handles alerting and monitoring.",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Ledger",
+    "b": "Forge",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Ledger and Forge are distinct projects. Ledger is the Payments accounting service, while Forge is the Platform-owned CI/CD system that Ledger depends on.",
+    "ctx_sim": 0.86
+  },
+  {
+    "a": "Beacon",
+    "b": "Orion",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Beacon and Orion are described as distinct projects with different owners and functions. The shared incident text and Kafka usage indicate they were both affected, not that they are the same entity.",
+    "ctx_sim": 0.85
+  },
+  {
+    "a": "Beacon",
+    "b": "Lens",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Beacon and Lens are described as distinct projects with different owners, functions, and dependencies. Their shared Kafka usage and appearance in the same incident do not indicate that they are the same entity.",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Orion",
+    "b": "Lens",
+    "type": "Project",
+    "same": false,
+    "why": "llm: Orion and Lens are distinct projects: Orion is the company search engine, while Lens powers recommendations. The shared incident and their dependency link show they are related, not the same entity.",
+    "ctx_sim": 0.87
+  },
+  {
+    "a": "K8s",
+    "b": "Kubernetes",
+    "type": "Tech",
+    "same": true,
+    "why": "llm: K8s is a common abbreviation for Kubernetes, so both mentions refer to the same technology.",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Carol",
+    "b": "A. Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Carol and A. Chen are distinct people: the facts state that Carol reports to A. Chen, indicating a relationship between them rather than identity.",
+    "ctx_sim": 0.94
+  },
+  {
+    "a": "A. Chen",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions share the surname Chen, but there is no evidence that A. Chen is Wei Chen. Their stated locations differ (Toronto and Berlin), and the documents provide no connecting facts.",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "A. Chen",
+    "b": "A. Moore",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions have different surnames and no facts linking them. Their relationships and contexts do not establish that they are the same person.",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "A. Chen",
+    "b": "W. Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions have different initials and no shared facts or other evidence linking them to the same person.",
+    "ctx_sim": 0.81
+  },
+  {
+    "a": "Priya Nair",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies Priya Nair, while Mention B is only identified as Alice. There is no evidence connecting Priya Nair to Alice.",
+    "ctx_sim": 0.75
+  },
+  {
+    "a": "Grace",
+    "b": "Ines",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Grace and Ines are separately named in the same sentence, indicating distinct people.",
+    "ctx_sim": 0.98
+  },
+  {
+    "a": "Grace",
+    "b": "Kofi",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The text lists Grace and Kofi as separate people, even though both work in Lisbon.",
+    "ctx_sim": 0.96
+  },
+  {
+    "a": "Ines",
+    "b": "Kofi",
+    "type": "Person",
+    "same": false,
+    "why": "llm: The mentions refer to different people: one is Ines and the other is Kofi. Sharing a workplace location and sentence does not indicate they are the same person.",
+    "ctx_sim": 0.97
+  },
+  {
+    "a": "Alex Kim",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names",
+    "ctx_sim": 0.82
+  },
+  {
+    "a": "Alex Kim",
+    "b": "Alex",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Both mentions describe an ML engineer named Alex, but Mention B omits a surname and provides no link to Alex Kim or Toronto. The different team assignments (Search vs. Lens) do not establish identity, so the evidence is insufficient.",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Alex Moore",
+    "b": "Alex",
+    "type": "Person",
+    "same": false,
+    "why": "llm: \u201cAlex\u201d could be Alex Moore, but the mentions provide no link between them. Their stated teams and work also differ, so the evidence is insufficient to merge them.",
+    "ctx_sim": 0.77
+  },
+  {
+    "a": "Alex Moore",
+    "b": "A. Moore",
+    "type": "Person",
+    "same": false,
+    "why": "llm: \u201cA. Moore\u201d could be Alex Moore, but the documents provide no direct link. The different work details do not establish that they are the same person.",
+    "ctx_sim": 0.76
+  },
+  {
+    "a": "Wei Chen",
+    "b": "W. Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Both mentions are associated with Search, and W. Chen could be Wei Chen, but the shared team and compatible name alone do not establish that they are the same person.",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Alex",
+    "b": "Dave",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A is Alex, who works on Lens and reports to Dave. Mention B is Dave, the person Alex reports to; they refer to different people.",
+    "ctx_sim": 0.84
+  },
+  {
+    "a": "Dave",
+    "b": "W. Chen",
+    "type": "Person",
+    "same": false,
+    "why": "llm: Mention A identifies a person only as Dave, while Mention B says W. Chen reports to Dave Lee. There is not enough evidence to establish that these are the same person.",
+    "ctx_sim": 0.78
+  },
+  {
+    "a": "A. Moore",
+    "b": "Alice",
+    "type": "Person",
+    "same": false,
+    "why": "llm: A. Moore and Alice are identified as distinct people: A. Moore reports to Alice.",
+    "ctx_sim": 0.9
+  }
+]

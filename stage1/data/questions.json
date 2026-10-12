@@ -1,0 +1,21 @@
+[
+  {"type": "1-hop", "q": "Who leads the Search team?", "expect": ["Dave Lee"], "forbid": ["Alice Chen", "Priya Nair"]},
+  {"type": "1-hop", "q": "Which office does Kofi Mensah work from?", "expect": ["Lisbon"], "forbid": ["Berlin", "Toronto"]},
+  {"type": "1-hop", "q": "Which technologies does Orion use?", "expect": ["Elasticsearch", "Kafka"], "forbid": ["Postgres", "PyTorch", "Kubernetes"]},
+  {"type": "1-hop", "q": "What is Frank Osei's role on Ledger?", "expect": ["data engineer"], "forbid": []},
+  {"type": "1-hop", "q": "Which team is Omar Haddad on?", "expect": ["Search"], "forbid": ["Platform"]},
+  {"type": "multi-hop", "q": "Who leads the team that owns Lens?", "expect": ["Dave Lee"], "forbid": ["Alice Chen", "Priya Nair"]},
+  {"type": "multi-hop", "q": "Which people work on projects owned by the Platform team?", "expect": ["Jack Wilson", "Kofi Mensah", "Lena Fischer"], "forbid": ["Omar Haddad"]},
+  {"type": "multi-hop", "q": "Who works on a project that Atlas depends on?", "expect": ["Frank Osei", "Grace Liu", "Kofi Mensah", "Lena Fischer"], "forbid": ["Jack Wilson", "Eve Park"]},
+  {"type": "multi-hop", "q": "Which other projects use a technology that Ledger uses?", "expect": ["Atlas"], "forbid": ["Orion", "Lens", "Beacon", "Forge"]},
+  {"type": "multi-hop", "q": "Who is the manager of Lena Fischer's manager?", "expect": ["Maria Santos"], "forbid": ["Alice Chen", "Dave Lee"]},
+  {"type": "multi-hop", "q": "Which people in the Berlin office work on Atlas?", "expect": ["Bob Kumar", "Carol Diaz", "Lena Fischer"], "forbid": ["Grace Liu"]},
+  {"type": "multi-hop", "q": "Which teams have members working on Atlas?", "expect": ["Payments", "Platform"], "forbid": ["Search"]},
+  {"type": "aggregation", "q": "How many people report directly to Alice Chen?", "expect": ["4|four"], "forbid": []},
+  {"type": "aggregation", "q": "Which project has the most people working on it?", "expect": ["Atlas"], "forbid": []},
+  {"type": "aggregation", "q": "How many projects use Kafka?", "expect": ["4|four"], "forbid": []},
+  {"type": "aggregation", "q": "Which office has the fewest people?", "expect": ["Lisbon"], "forbid": []},
+  {"type": "aggregation", "q": "Which teams own more than one project that uses Kafka?", "expect": ["Search"], "forbid": ["Payments", "Platform"]},
+  {"type": "not-found", "q": "Who works on Project Zeus?", "expect": [], "forbid": []},
+  {"type": "not-found", "q": "What is Dave Lee's salary?", "expect": [], "forbid": []}
+]

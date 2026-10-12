@@ -1,0 +1,957 @@
+[
+  {
+    "a": "Alice Chen",
+    "b": "Maria Santos",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Bob Kumar",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alice Chen",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Bob Kumar",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Maria Santos",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Carol Diaz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Bob Kumar",
+    "b": "Carol Diz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Frank Osei",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Dave Lee",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Carol Diaz",
+    "b": "Carol Diz",
+    "type": "Person",
+    "same": true,
+    "why": "llm: Carol Diz is a one-letter typo for Carol Diaz; both are recorded working on project Atlas."
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Grace Liu",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Frank Osei",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Grace Liu",
+    "b": "Carol Diz",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Eve Park",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Dave Lee",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Search",
+    "b": "Platform",
+    "type": "Team",
+    "same": false,
+    "why": "llm: Mention A refers to the Search team, led by Dave Lee, while Mention B refers to the Platform team, led by Dr. Nair. They are distinct teams (explicitly distinguished in the text: 'Omar Haddad has moved from the Platform team to the Search team')."
+  },
+  {
+    "a": "Eve Park",
+    "b": "Hiro Tanaka",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Eve Park",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Ines Moreau",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Hiro Tanaka",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Ines Moreau",
+    "b": "Omar Haddad",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Ines Moreau",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Jack Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Alex Kim",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Jane Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Omar Haddad",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Kofi Mensah",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Jack Wilson",
+    "b": "Jane Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Kofi Mensah",
+    "b": "Lena Fischer",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Kofi Mensah",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Lena Fischer",
+    "b": "Priya Nair",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Lena Fischer",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "PyTorch",
+    "b": "Python",
+    "type": "Tech",
+    "same": false,
+    "why": "llm: PyTorch is a machine learning framework, whereas Python is a programming language; they are distinct technologies."
+  },
+  {
+    "a": "Priya Nair",
+    "b": "Jane Wilson",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alex Kim",
+    "b": "Alex Moore",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "Alex Moore",
+    "b": "Wei Chen",
+    "type": "Person",
+    "same": false,
+    "why": "rule: different full names"
+  },
+  {
+    "a": "the CTO",
+    "b": "Maria Santos",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Maria Santos is identified explicitly in the context text as the CTO ('our CTO, Maria Santos' and 'Maria Santos (CTO)')."
+  },
+  {
+    "a": "Priya",
+    "b": "Priya Nair",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Frank Osei",
+      "Hiro Tanaka",
+      "Jack Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Priya Nair",
+      "Jane Wilson"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Priya refers to Priya Nair, as the team members Jack Wilson, Kofi Mensah, Lena Fischer, and Jane Wilson report to Priya/Priya Nair who leads Platform."
+  },
+  {
+    "a": "Carol",
+    "b": "Carol Diaz",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu",
+      "Dave Lee",
+      "Eve Park",
+      "Omar Haddad",
+      "Lena Fischer",
+      "Alex Moore",
+      "Wei Chen",
+      "Carol Diz"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Carol is located in Berlin and reports to A. Chen (Alice Chen). Candidate 4, Carol Diaz, is located in Berlin, reports to Alice Chen, and directly matches the name Carol. Carol Diz (Candidate 13) does not have location or manager facts, while Carol Diaz perfectly matches all facts."
+  },
+  {
+    "a": "A. Chen",
+    "b": "Alice Chen",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Frank Osei",
+      "Hiro Tanaka",
+      "Jack Wilson",
+      "Priya Nair",
+      "Alex Kim",
+      "Wei Chen"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: A. Chen matches Alice Chen based on initials/name, both being located in Toronto, and Carol (Carol Diaz) reporting to Alice Chen / A. Chen."
+  },
+  {
+    "a": "Grace",
+    "b": "Grace Liu",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu",
+      "Lena Fischer",
+      "Jane Wilson",
+      "Carol Diz"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Grace matches Grace Liu, who is the only candidate sharing this name, with no conflicting location or other attributes."
+  },
+  {
+    "a": "A. Moore",
+    "b": "Alex Moore",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu",
+      "Alex Moore"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: A. Moore matches Alex Moore by initial and surname. Furthermore, Alex Moore is a member of Payments, which owns Ledger and is led by Alice (whom A. Moore reports to)."
+  },
+  {
+    "a": "Alice",
+    "b": "Alice Chen",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Frank Osei",
+      "Grace Liu",
+      "Hiro Tanaka",
+      "Jack Wilson",
+      "Priya Nair"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Alice Chen is the only candidate named Alice, and related facts directly connect 'A. Moore REPORTS_TO Alice' to her."
+  },
+  {
+    "a": "W. Chen",
+    "b": "Wei Chen",
+    "candidates": [
+      "Alice Chen",
+      "Maria Santos",
+      "Dave Lee",
+      "Eve Park",
+      "Hiro Tanaka",
+      "Ines Moreau",
+      "Omar Haddad",
+      "Wei Chen"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: W. Chen corresponds to Wei Chen, who is a member of the Search team led by Dave Lee and works on Orion."
+  },
+  {
+    "a": "Dave",
+    "b": "Dave Lee",
+    "candidates": [
+      "Maria Santos",
+      "Bob Kumar",
+      "Carol Diaz",
+      "Dave Lee",
+      "Eve Park",
+      "Hiro Tanaka",
+      "Ines Moreau",
+      "Omar Haddad",
+      "Lena Fischer",
+      "Alex Kim",
+      "Alex Moore",
+      "Wei Chen"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Dave matches candidate 4 (Dave Lee) by first name, who leads Search, to whom multiple engineers report."
+  },
+  {
+    "a": "Ines",
+    "b": "Ines Moreau",
+    "candidates": [
+      "Dave Lee",
+      "Eve Park",
+      "Hiro Tanaka",
+      "Ines Moreau",
+      "Alex Kim",
+      "Jane Wilson"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Candidate 4 (Ines Moreau) is the only candidate matching the first name 'Ines', and their facts/locations do not contradict each other."
+  },
+  {
+    "a": "Alex",
+    "b": "Alex Kim",
+    "candidates": [
+      "Dave Lee",
+      "Eve Park",
+      "Hiro Tanaka",
+      "Ines Moreau",
+      "Omar Haddad",
+      "Alex Kim",
+      "Alex Moore",
+      "Wei Chen"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Alex Kim is an ML engineer who joined the Search team (which owns Lens and is led by Dave Lee)."
+  },
+  {
+    "a": "Hiro T.",
+    "b": "Hiro Tanaka",
+    "candidates": [
+      "Hiro Tanaka",
+      "Ines Moreau"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Hiro T. is an abbreviated name for Hiro Tanaka, who is a member of Search, the team that owns Lens (which Hiro T. works on)."
+  },
+  {
+    "a": "Dr. Nair",
+    "b": "Priya Nair",
+    "candidates": [
+      "Omar Haddad",
+      "Jack Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Priya Nair",
+      "Jane Wilson"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Candidate 5 is Priya Nair. Dr. Nair leads the Platform team, and the members of the Platform team (Jack Wilson, Kofi Mensah, Lena Fischer, Jane Wilson) report to Priya / Priya Nair. Therefore, Dr. Nair is Priya Nair."
+  },
+  {
+    "a": "Orion",
+    "b": null,
+    "candidates": [
+      "Atlas"
+    ],
+    "type": "Project",
+    "same": false,
+    "why": "llm-link: Orion and Atlas are distinct projects (both are listed as degraded services in the text). None of the candidates match Orion."
+  },
+  {
+    "a": "Beacon",
+    "b": null,
+    "candidates": [
+      "Orion",
+      "Atlas",
+      "Ledger",
+      "Lens"
+    ],
+    "type": "Project",
+    "same": false,
+    "why": "llm-link: Beacon is not among the candidate entities (which are Orion, Atlas, Ledger, and Lens), so none of them match."
+  },
+  {
+    "a": "Lens",
+    "b": null,
+    "candidates": [
+      "Orion",
+      "Atlas"
+    ],
+    "type": "Project",
+    "same": false,
+    "why": "llm-link: Lens is a distinct project that depends on Orion and co-occurs with Atlas, Orion, and Beacon. Neither candidate is Lens."
+  },
+  {
+    "a": "Kofi",
+    "b": "Kofi Mensah",
+    "candidates": [
+      "Jack Wilson",
+      "Kofi Mensah",
+      "Lena Fischer",
+      "Priya Nair",
+      "Jane Wilson"
+    ],
+    "type": "Person",
+    "same": true,
+    "why": "llm-link: Kofi matches Kofi Mensah by first name, and Kofi Mensah has the related fact 'Kofi LOCATED_IN Lisbon'."
+  },
+  {
+    "a": "Ledger",
+    "b": null,
+    "candidates": [
+      "Atlas"
+    ],
+    "type": "Project",
+    "same": false,
+    "why": "llm-link: The mention refers to Ledger, which is a distinct project that Atlas depends on. Candidate 1 is Atlas itself, so none of the candidates match Ledger."
+  },
+  {
+    "a": "Postgres",
+    "b": null,
+    "candidates": [
+      "Kafka"
+    ],
+    "type": "Tech",
+    "same": false,
+    "why": "llm-link: Postgres (PostgreSQL) is a relational database and completely different from Kafka, a message broker. No candidate matches."
+  },
+  {
+    "a": "Elasticsearch",
+    "b": null,
+    "candidates": [
+      "Kafka"
+    ],
+    "type": "Tech",
+    "same": false,
+    "why": "llm-link: Elasticsearch is a different technology from Kafka; none of the candidates match Elasticsearch."
+  },
+  {
+    "a": "PyTorch",
+    "b": null,
+    "candidates": [
+      "Kafka"
+    ],
+    "type": "Tech",
+    "same": false,
+    "why": "llm-link: PyTorch is a distinct technology from Kafka; none of the candidates match PyTorch."
+  },
+  {
+    "a": "Kubernetes",
+    "b": null,
+    "candidates": [
+      "Kafka"
+    ],
+    "type": "Tech",
+    "same": false,
+    "why": "llm-link: Kubernetes is a distinct technology from Kafka, so Candidate 1 does not match."
+  },
+  {
+    "a": "MongoDB Atlas",
+    "b": null,
+    "candidates": [
+      "Kafka",
+      "Postgres"
+    ],
+    "type": "Tech",
+    "same": false,
+    "why": "llm-link: MongoDB Atlas is a distinct database technology, distinct from Kafka and Postgres. Neither candidate matches MongoDB Atlas."
+  },
+  {
+    "a": "Python",
+    "b": null,
+    "candidates": [
+      "Kafka"
+    ],
+    "type": "Tech",
+    "same": false,
+    "why": "llm-link: Python is a distinct technology from Kafka; none of the candidates match Python."
+  },
+  {
+    "a": "Forge",
+    "b": null,
+    "candidates": [
+      "Ledger",
+      "Beacon"
+    ],
+    "type": "Project",
+    "same": false,
+    "why": "llm-link: Forge is a distinct CI/CD project owned by Platform, separate from Ledger and Beacon. Neither candidate matches Forge."
+  }
+]

@@ -1,0 +1,21 @@
+employee_id,name,email,team,is_lead,manager_id,office,title
+E001,Maria Santos,maria.santos@corp.example,,no,,Toronto,CTO
+E002,Alice Chen,alice.chen@corp.example,Payments,yes,E001,Toronto,Head of Payments
+E003,Dave Lee,dave.lee@corp.example,Search,yes,E001,Berlin,Engineering Manager
+E004,Priya Nair,priya.nair@corp.example,Platform,yes,E001,Toronto,Engineering Manager
+E005,Bob Kumar,bob.kumar@corp.example,Payments,no,E002,Berlin,Backend Engineer
+E006,Carol Diaz,carol.diaz@corp.example,Payments,no,E002,Berlin,Backend Engineer
+E007,Frank Osei,frank.osei@corp.example,Payments,no,E002,Toronto,Data Engineer
+E008,Grace Liu,grace.liu@corp.example,Payments,no,E002,Toronto,Frontend Engineer
+E009,Eve Park,eve.park@corp.example,Search,no,E003,Berlin,Search Engineer
+E010,Hiro Tanaka,hiro.tanaka@corp.example,Search,no,E003,Toronto,ML Engineer
+E011,Ines Moreau,ines.moreau@corp.example,Search,no,E003,Lisbon,Data Scientist
+E012,Omar Haddad,omar.haddad@corp.example,Search,no,E003,Berlin,SRE
+E013,Jack Wilson,jack.wilson@corp.example,Platform,no,E004,Toronto,DevOps Engineer
+E014,Kofi Mensah,kofi.mensah@corp.example,Platform,no,E004,Lisbon,SRE
+E015,Lena Fischer,lena.fischer@corp.example,Platform,no,E004,Berlin,Backend Engineer
+E016,Alex Kim,alex.kim@corp.example,Search,no,E003,Toronto,ML Engineer
+E017,Alex Moore,alex.moore@corp.example,Payments,no,E002,Berlin,Backend Engineer
+E018,Jane Wilson,jane.wilson@corp.example,Platform,no,E004,Lisbon,SRE
+E019,Wei Chen,wei.chen@corp.example,Search,no,E003,Berlin,Search Engineer
+E020,Nina Petrova,nina.petrova@corp.example,Platform,no,E004,Lisbon,SRE

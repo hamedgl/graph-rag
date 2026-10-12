@@ -1,0 +1,195 @@
+[
+  {
+    "name": "Alice Chen",
+    "type": "Person",
+    "aliases": [
+      "Alice",
+      "A. Chen"
+    ]
+  },
+  {
+    "name": "Bob Kumar",
+    "type": "Person",
+    "aliases": [
+      "Bob"
+    ]
+  },
+  {
+    "name": "Carol Diaz",
+    "type": "Person",
+    "aliases": [
+      "Carol"
+    ]
+  },
+  {
+    "name": "Frank Osei",
+    "type": "Person",
+    "aliases": []
+  },
+  {
+    "name": "Grace Liu",
+    "type": "Person",
+    "aliases": [
+      "Grace"
+    ]
+  },
+  {
+    "name": "Dave Lee",
+    "type": "Person",
+    "aliases": [
+      "Dave"
+    ]
+  },
+  {
+    "name": "Eve Park",
+    "type": "Person",
+    "aliases": [
+      "Eve"
+    ]
+  },
+  {
+    "name": "Hiro Tanaka",
+    "type": "Person",
+    "aliases": [
+      "Hiro T.",
+      "Hiro"
+    ]
+  },
+  {
+    "name": "Ines Moreau",
+    "type": "Person",
+    "aliases": [
+      "Ines"
+    ]
+  },
+  {
+    "name": "Omar Haddad",
+    "type": "Person",
+    "aliases": []
+  },
+  {
+    "name": "Priya Nair",
+    "type": "Person",
+    "aliases": [
+      "Dr. Nair",
+      "Priya"
+    ]
+  },
+  {
+    "name": "Jack Wilson",
+    "type": "Person",
+    "aliases": []
+  },
+  {
+    "name": "Kofi Mensah",
+    "type": "Person",
+    "aliases": []
+  },
+  {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [
+      "Lena"
+    ]
+  },
+  {
+    "name": "Maria Santos",
+    "type": "Person",
+    "aliases": [
+      "CTO",
+      "the CTO"
+    ]
+  },
+  {
+    "name": "Payments",
+    "type": "Team",
+    "aliases": [
+      "Payments squad"
+    ]
+  },
+  {
+    "name": "Search",
+    "type": "Team",
+    "aliases": []
+  },
+  {
+    "name": "Platform",
+    "type": "Team",
+    "aliases": []
+  },
+  {
+    "name": "Atlas",
+    "type": "Project",
+    "aliases": []
+  },
+  {
+    "name": "Ledger",
+    "type": "Project",
+    "aliases": []
+  },
+  {
+    "name": "Orion",
+    "type": "Project",
+    "aliases": []
+  },
+  {
+    "name": "Lens",
+    "type": "Project",
+    "aliases": []
+  },
+  {
+    "name": "Forge",
+    "type": "Project",
+    "aliases": []
+  },
+  {
+    "name": "Beacon",
+    "type": "Project",
+    "aliases": []
+  },
+  {
+    "name": "Kafka",
+    "type": "Tech",
+    "aliases": []
+  },
+  {
+    "name": "Postgres",
+    "type": "Tech",
+    "aliases": [
+      "PostgreSQL",
+      "PG"
+    ]
+  },
+  {
+    "name": "Kubernetes",
+    "type": "Tech",
+    "aliases": [
+      "K8s"
+    ]
+  },
+  {
+    "name": "Elasticsearch",
+    "type": "Tech",
+    "aliases": []
+  },
+  {
+    "name": "PyTorch",
+    "type": "Tech",
+    "aliases": []
+  },
+  {
+    "name": "Berlin",
+    "type": "Office",
+    "aliases": []
+  },
+  {
+    "name": "Toronto",
+    "type": "Office",
+    "aliases": []
+  },
+  {
+    "name": "Lisbon",
+    "type": "Office",
+    "aliases": []
+  }
+]
